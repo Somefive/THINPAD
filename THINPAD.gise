@@ -82,6 +82,32 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="RegistersHeap.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="RegistersHeap.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="RegistersHeap.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorALUParam1.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorALUParam1.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorALUParam1.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorALUParam1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorALUParam1.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorALUParam2.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorALUParam2.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorALUParam2.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorALUParam2.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorALUParam2.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorShiftParam.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorShiftParam.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorShiftParam.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorShiftParam.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorShiftParam.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorWriteRegister.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorWriteRegister.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorWriteRegister.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorWriteRegister.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="SelectorWriteRegister.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorWriteRegister.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorWriteRegisterData.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorWriteRegisterData.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorWriteRegisterData.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorWriteRegisterData.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorWriteRegisterData.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -127,8 +153,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1478781053" xil_pn:in_ck="-4659943928375421873" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6610322198483499749" xil_pn:start_ts="1478781046">
+    <transform xil_pn:end_ts="1478789795" xil_pn:in_ck="108277032266333014" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6610322198483499749" xil_pn:start_ts="1478789787">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -150,7 +177,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1478781061" xil_pn:in_ck="3448645596365777628" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4387085462043182293" xil_pn:start_ts="1478781055">
+    <transform xil_pn:end_ts="1478789874" xil_pn:in_ck="3448645596365777628" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4387085462043182293" xil_pn:start_ts="1478789869">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Main.bld"/>
@@ -159,7 +186,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1478781065" xil_pn:in_ck="3448647002774395869" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3188416950630775481" xil_pn:start_ts="1478781061">
+    <transform xil_pn:end_ts="1478789879" xil_pn:in_ck="3448647002774395869" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3188416950630775481" xil_pn:start_ts="1478789874">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -173,7 +200,7 @@
       <outfile xil_pn:name="Main_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1478781080" xil_pn:in_ck="4323994788891772534" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-1607638419597400795" xil_pn:start_ts="1478781065">
+    <transform xil_pn:end_ts="1478789895" xil_pn:in_ck="4323994788891772534" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-1607638419597400795" xil_pn:start_ts="1478789879">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -188,7 +215,7 @@
       <outfile xil_pn:name="Main_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1478781080" xil_pn:in_ck="3448461356836788057" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1478781077">
+    <transform xil_pn:end_ts="1478789895" xil_pn:in_ck="3448461356836788057" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1478789892">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Main.twr"/>

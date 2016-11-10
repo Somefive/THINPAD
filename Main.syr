@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Main.prj
 
@@ -106,10 +106,25 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd" in Library work.
 Architecture behavioral of Entity digitlights is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhd" in Library work.
+Architecture behavioral of Entity registersheap is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegister.vhd" in Library work.
+Architecture behavioral of Entity selectorwriteregister is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegisterData.vhd" in Library work.
+Architecture behavioral of Entity selectorwriteregisterdata is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam1.vhd" in Library work.
+Architecture behavioral of Entity selectoraluparam1 is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam2.vhd" in Library work.
+Architecture behavioral of Entity selectoraluparam2 is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorShiftParam.vhd" in Library work.
+Architecture behavioral of Entity selectorshiftparam is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd" in Library work.
 Architecture behavioral of Entity timer is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/CPU.vhd" in Library work.
-Architecture behavioral of Entity cpu is up to date.
+Entity <cpu> compiled.
+Entity <cpu> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd" in Library work.
 Architecture behavioral of Entity main is up to date.
 
@@ -123,6 +138,20 @@ Analyzing hierarchy for entity <Timer> in library <work> (architecture <behavior
 Analyzing hierarchy for entity <CPU> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <DigitLights> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RegistersHeap> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorWriteRegister> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorWriteRegisterData> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorALUParam1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorALUParam2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorShiftParam> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
@@ -140,6 +169,27 @@ Entity <CPU> analyzed. Unit <CPU> generated.
 Analyzing Entity <DigitLights> in library <work> (Architecture <behavioral>).
 INFO:Xst:1561 - "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd" line 57: Mux is complete : default of case is discarded
 Entity <DigitLights> analyzed. Unit <DigitLights> generated.
+
+Analyzing Entity <RegistersHeap> in library <work> (Architecture <behavioral>).
+Entity <RegistersHeap> analyzed. Unit <RegistersHeap> generated.
+
+Analyzing Entity <SelectorWriteRegister> in library <work> (Architecture <behavioral>).
+Entity <SelectorWriteRegister> analyzed. Unit <SelectorWriteRegister> generated.
+
+Analyzing Entity <SelectorWriteRegisterData> in library <work> (Architecture <behavioral>).
+Entity <SelectorWriteRegisterData> analyzed. Unit <SelectorWriteRegisterData> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <SelectorALUParam1> in library <work> (Architecture <behavioral>).
+Entity <SelectorALUParam1> analyzed. Unit <SelectorALUParam1> generated.
+
+Analyzing Entity <SelectorALUParam2> in library <work> (Architecture <behavioral>).
+Entity <SelectorALUParam2> analyzed. Unit <SelectorALUParam2> generated.
+
+Analyzing Entity <SelectorShiftParam> in library <work> (Architecture <behavioral>).
+Entity <SelectorShiftParam> analyzed. Unit <SelectorShiftParam> generated.
 
 
 =========================================================================
@@ -167,8 +217,86 @@ Synthesizing Unit <DigitLights>.
 Unit <DigitLights> synthesized.
 
 
+Synthesizing Unit <RegistersHeap>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhd".
+WARNING:Xst:737 - Found 16-bit latch for signal <REG0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <REG1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <REG2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <REG3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <REG4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <REG5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <REG6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <REG7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16-bit 8-to-1 multiplexer for signal <ReadData1>.
+    Found 16-bit 8-to-1 multiplexer for signal <ReadData2>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <RegistersHeap> synthesized.
+
+
+Synthesizing Unit <SelectorWriteRegister>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegister.vhd".
+    Found 3-bit 4-to-1 multiplexer for signal <output>.
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <SelectorWriteRegister> synthesized.
+
+
+Synthesizing Unit <SelectorWriteRegisterData>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegisterData.vhd".
+    Found 16-bit 8-to-1 multiplexer for signal <WriteRegisterData>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <SelectorWriteRegisterData> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd".
+    Found 16-bit addsub for signal <Result$addsub0000>.
+    Found 16-bit shifter logical left for signal <Result$shift0004> created at line 52.
+    Found 16-bit shifter arithmetic right for signal <Result$shift0005> created at line 53.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <SelectorALUParam1>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam1.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <ALUOperandA>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <SelectorALUParam1> synthesized.
+
+
+Synthesizing Unit <SelectorALUParam2>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam2.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <ALUOperandB>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <SelectorALUParam2> synthesized.
+
+
+Synthesizing Unit <SelectorShiftParam>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorShiftParam.vhd".
+Unit <SelectorShiftParam> synthesized.
+
+
 Synthesizing Unit <CPU>.
     Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/CPU.vhd".
+WARNING:Xst:653 - Signal <SelectorOfWriteRegisterData> is used but never assigned. This sourceless signal will be automatically connected to value 000.
+WARNING:Xst:653 - Signal <SelectorOfWriteRegister> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <SelectorOfALUParam2> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <SelectorOfALUParam1> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <SelectedImmediate> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <SP> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <RegisterHeapEN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <PC> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:646 - Signal <Instruction<15:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <IH> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:1780 - Signal <DataMemoryWriteData> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <DataMemoryReadData> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <ALUOperator> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 Unit <CPU> synthesized.
 
 
@@ -176,6 +304,7 @@ Synthesizing Unit <Main>.
     Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd".
 Unit <Main> synthesized.
 
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 HDL Synthesis Report
@@ -183,8 +312,19 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 16-bit addsub                                         : 1
 # Counters                                             : 2
  7-bit up counter                                      : 2
+# Latches                                              : 8
+ 16-bit latch                                          : 8
+# Multiplexers                                         : 6
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 8-to-1 multiplexer                             : 3
+ 3-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 16-bit shifter arithmetic right                       : 1
+ 16-bit shifter logical left                           : 1
 
 =========================================================================
 
@@ -192,6 +332,20 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <RegisterHeap_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorWriteRegister_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorWriteRegisterData_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ALU_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorALUParam1_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorALUParam2_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorShiftParam_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -199,14 +353,155 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 16-bit addsub                                         : 1
+# Latches                                              : 8
+ 16-bit latch                                          : 8
+# Multiplexers                                         : 6
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 8-to-1 multiplexer                             : 3
+ 3-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 16-bit shifter arithmetic right                       : 1
+ 16-bit shifter logical left                           : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1294 - Latch <REG7_0> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_1> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_2> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_3> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_4> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_5> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_6> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_7> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_8> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_9> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_10> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_11> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_12> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_13> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_14> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG7_15> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_0> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_1> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_2> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_3> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_4> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_5> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_6> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_7> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_8> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_9> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_10> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_11> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_12> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_13> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_14> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG6_15> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_0> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_1> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_2> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_3> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_4> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_5> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_6> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_7> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_8> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_9> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_10> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_11> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_12> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_13> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_14> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG5_15> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_0> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_1> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_2> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_3> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_4> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_5> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_6> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_7> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_8> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_9> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_10> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_11> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_12> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_13> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_14> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG4_15> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_0> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_1> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_2> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_3> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_4> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_5> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_6> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_7> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_8> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_9> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_10> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_11> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_12> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_13> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_14> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG3_15> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_0> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_1> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_2> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_3> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_4> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_5> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_6> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_7> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_8> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_9> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_10> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_11> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_12> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_13> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_14> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG2_15> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_0> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_1> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_2> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_3> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_4> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_5> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_6> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_7> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_8> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_9> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_10> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_11> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_12> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_13> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_14> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG1_15> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_0> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_1> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_2> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_3> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_4> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_5> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_6> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_7> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_8> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_9> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_10> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_11> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_12> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_13> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_14> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1294 - Latch <REG0_15> is equivalent to a wire in block <RegistersHeap>.
 
 Optimizing unit <Main> ...
+
+Optimizing unit <RegistersHeap> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -320,14 +615,14 @@ Delay:               4.910ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.51 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.69 secs
  
 --> 
 
-Total memory usage is 307804 kilobytes
+Total memory usage is 307820 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :  156 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

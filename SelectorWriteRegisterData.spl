@@ -1,0 +1,11 @@
+[Inputs]
+=PC[15:0]=
+=RegistersReadData2[15:0]=
+=Instruction7to0[7:0]=
+=ALUResult[15:0]=
+=DataMemoryReadData[15:0]=
+=IH[15:0]=
+=selector[2:0]=
+[Outputs]
+=WriteRegisterData[15:0]=
+[BiDir]

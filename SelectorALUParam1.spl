@@ -1,0 +1,8 @@
+[Inputs]
+=ReadRegisterData1[15:0]=
+=SP[15:0]=
+=Instruction4to2ShiftResult[15:0]=
+=selector[1:0]=
+[Outputs]
+=ALUOperandA[15:0]=
+[BiDir]

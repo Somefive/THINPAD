@@ -1,0 +1,3 @@
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegister.vhi -module SelectorWriteRegister -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work SelectorWriteRegister.vhd 
+vhdtdtfi -lib work SelectorWriteRegister.vhd -prj THINPAD -o SelectorWriteRegister.spl -module SelectorWriteRegister -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorWriteRegister.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegister.sym 

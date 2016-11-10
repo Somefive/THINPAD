@@ -1,0 +1,8 @@
+[Inputs]
+=rx[2:0]=
+=ry[2:0]=
+=rz[2:0]=
+=selector[1:0]=
+[Outputs]
+=output[2:0]=
+[BiDir]

@@ -8,5 +8,483 @@
 <msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Mux is complete : default of case is discarded
 </msg>
 
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">REG0</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">REG1</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">REG2</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">REG3</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">REG4</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">REG5</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">REG6</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">REG7</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SelectorOfWriteRegisterData</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SelectorOfWriteRegister</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SelectorOfALUParam2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SelectorOfALUParam1</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SelectedImmediate</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SP</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">RegisterHeapEN</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Instruction&lt;15:11&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">IH</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">DataMemoryWriteData</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DataMemoryReadData</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ALUOperator</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">RegisterHeap_Entity</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">CPU_ENTITY</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SelectorWriteRegister_Entity</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">CPU_ENTITY</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SelectorWriteRegisterData_Entity</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">CPU_ENTITY</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">ALU_Entity</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">CPU_ENTITY</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SelectorALUParam1_Entity</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">CPU_ENTITY</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SelectorALUParam2_Entity</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">CPU_ENTITY</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">SelectorShiftParam_Entity</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">CPU_ENTITY</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG7_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG6_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG5_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG4_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG3_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG2_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG1_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">REG0_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">RegistersHeap</arg>&gt;.
+</msg>
+
 </messages>
 

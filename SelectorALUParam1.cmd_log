@@ -1,0 +1,4 @@
+vhdtdtfi -lib work SelectorALUParam1.vhd -prj THINPAD -o SelectorALUParam1.spl -module SelectorALUParam1 -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorALUParam1.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam1.sym 
+vhdtdtfi -lib work SelectorALUParam1.vhd -prj THINPAD -o SelectorALUParam1.spl -module SelectorALUParam1 -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorALUParam1.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam1.sym 

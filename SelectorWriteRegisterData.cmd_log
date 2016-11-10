@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SelectorWriteRegisterData.vhd -prj THINPAD -o SelectorWriteRegisterData.spl -module SelectorWriteRegisterData -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorWriteRegisterData.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegisterData.sym 

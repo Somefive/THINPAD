@@ -1,6 +1,6 @@
 [Inputs]
-=Operand1[15:0]=
-=Operand2[15:0]=
+=OperandA[15:0]=
+=OperandB[15:0]=
 =ALUOp[3:0]=
 [Outputs]
 =Result[15:0]=

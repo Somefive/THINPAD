@@ -4,15 +4,15 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="17">
-<DesignStatistics TimeStamp="Thu Nov 10 20:31:04 2016"><group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="17">
+<DeviceUsageSummary rev="20">
+<DesignStatistics TimeStamp="Thu Nov 10 22:57:58 2016"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="20">
 <attrib name="value" value="187"/></item>
-<item name="AGG_IO" rev="17">
+<item name="AGG_IO" rev="20">
 <attrib name="value" value="187"/></item>
-<item name="NUM_BONDED_IBUF" rev="17">
+<item name="NUM_BONDED_IBUF" rev="20">
 <attrib name="value" value="21"/></item>
-<item name="NUM_BONDED_IOB" rev="17">
+<item name="NUM_BONDED_IOB" rev="20">
 <attrib name="value" value="166"/></item>
 </group>
 </DesignStatistics>

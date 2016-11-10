@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SelectorALUParam2.vhd -prj THINPAD -o SelectorALUParam2.spl -module SelectorALUParam2 -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorALUParam2.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam2.sym 

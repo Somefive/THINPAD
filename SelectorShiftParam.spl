@@ -1,0 +1,5 @@
+[Inputs]
+=Instruction4to2[2:0]=
+[Outputs]
+=Instruction4to2ShiftResult[15:0]=
+[BiDir]

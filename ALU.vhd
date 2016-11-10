@@ -32,8 +32,8 @@ use IEEE.std_logic_unsigned.all;
 --use UNISIM.VComponents.all;
 
 entity ALU is
-    Port ( Operand1 : in  STD_LOGIC_VECTOR (15 downto 0);
-           Operand2 : in  STD_LOGIC_VECTOR (15 downto 0);
+    Port ( OperandA : in  STD_LOGIC_VECTOR (15 downto 0);
+           OperandB : in  STD_LOGIC_VECTOR (15 downto 0);
            ALUOp : in  STD_LOGIC_VECTOR (3 downto 0);
            Result : out  STD_LOGIC_VECTOR (15 downto 0));
 end ALU;
@@ -42,16 +42,16 @@ architecture Behavioral of ALU is
 
 begin
 
-	process(Operand1,Operand2,ALUOp)
+	process(OperandA,OperandB,ALUOp)
 	begin
 	case ALUOp is
-		when "0001" => Result <= Operand1 + Operand2;
-		when "0010" => Result <= Operand1 - Operand2;
-		when "0011" => Result <= Operand1 and Operand2;
-		when "0100" => Result <= Operand1 or Operand2;
-		when "0101" => Result <= to_stdlogicvector(to_bitvector(Operand2) sll conv_integer(Operand1));
-		when "0110" => Result <= to_stdlogicvector(to_bitvector(Operand2) sra conv_integer(Operand1));
-		when "0111" => Result <= "0000000000000000"-Operand2;
+		when "0001" => Result <= OperandA + OperandB;
+		when "0010" => Result <= OperandA - OperandB;
+		when "0011" => Result <= OperandA and OperandB;
+		when "0100" => Result <= OperandA or OperandB;
+		when "0101" => Result <= to_stdlogicvector(to_bitvector(OperandB) sll conv_integer(OperandA));
+		when "0110" => Result <= to_stdlogicvector(to_bitvector(OperandB) sra conv_integer(OperandA));
+		when "0111" => Result <= "0000000000000000"-OperandB;
 		when others => Result <= "0000000000000000";
 	end case;
 	end process;

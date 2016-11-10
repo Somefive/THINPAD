@@ -1,0 +1,5 @@
+set -tmpdir "D:/Study/THU/2016Autumn/CPU/THINPAD/xst/projnav.tmp"
+set -xsthdpdir "D:/Study/THU/2016Autumn/CPU/THINPAD/xst"
+elaborate
+-ifn SelectorWriteRegisterData.prj
+-ifmt mixed

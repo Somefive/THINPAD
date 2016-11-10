@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> Parameter xsthdpdir set to D:/Study/THU/2016Autumn/CPU/THINPAD/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -19,15 +19,15 @@ Total CPU time to Xst completion: 0.10 secs
 =========================================================================
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd" in Library work.
 Entity <alu> compiled.
-Entity <ALU> (Architecture <Behavioral>) compiled.
+Entity <alu> (Architecture <behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.46 secs
  
 --> 
 
-Total memory usage is 262376 kilobytes
+Total memory usage is 262380 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

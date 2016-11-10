@@ -1,0 +1,6 @@
+[Inputs]
+=Adder[15:0]=
+=PC[15:0]=
+[Outputs]
+=Result[15:0]=
+[BiDir]

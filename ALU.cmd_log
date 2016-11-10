@@ -1,0 +1,3 @@
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhi -module ALU -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ALU.vhd 
+vhdtdtfi -lib work ALU.vhd -prj THINPAD -o ALU.spl -module ALU -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ALU.spl D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.sym 

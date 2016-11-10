@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.09 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: Main.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,14 +104,25 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd" in Library work.
+Architecture behavioral of Entity digitlights is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd" in Library work.
+Architecture behavioral of Entity timer is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/CPU.vhd" in Library work.
+Architecture behavioral of Entity cpu is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd" in Library work.
-Entity <main> compiled.
-Entity <main> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity main is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
 Analyzing hierarchy for entity <Main> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Timer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CPU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DigitLights> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
@@ -120,6 +131,16 @@ Analyzing hierarchy for entity <Main> in library <work> (architecture <behaviora
 Analyzing Entity <Main> in library <work> (Architecture <behavioral>).
 Entity <Main> analyzed. Unit <Main> generated.
 
+Analyzing Entity <Timer> in library <work> (Architecture <behavioral>).
+Entity <Timer> analyzed. Unit <Timer> generated.
+
+Analyzing Entity <CPU> in library <work> (Architecture <behavioral>).
+Entity <CPU> analyzed. Unit <CPU> generated.
+
+Analyzing Entity <DigitLights> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd" line 57: Mux is complete : default of case is discarded
+Entity <DigitLights> analyzed. Unit <DigitLights> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -127,97 +148,44 @@ Entity <Main> analyzed. Unit <Main> generated.
 
 Performing bidirectional port resolution...
 
+Synthesizing Unit <Timer>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd".
+    Found 1-bit register for signal <CLK_CURRENT>.
+    Found 7-bit up counter for signal <count>.
+    Found 7-bit up counter for signal <count2>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Timer> synthesized.
+
+
+Synthesizing Unit <DigitLights>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd".
+    Found 16x7-bit ROM for signal <L>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <DigitLights> synthesized.
+
+
+Synthesizing Unit <CPU>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/CPU.vhd".
+Unit <CPU> synthesized.
+
+
 Synthesizing Unit <Main>.
     Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd".
-WARNING:Xst:2565 - Inout <RAM1DATA<0>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<8>> is never assigned.
-WARNING:Xst:1306 - Output <RAM1_RW> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<1>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<9>> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_A> is never assigned.
-WARNING:Xst:1306 - Output <U_RXD> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_RP> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<2>> is never assigned.
-WARNING:Xst:1306 - Output <PS2KB_CLOCK> is never assigned.
-WARNING:Xst:1306 - Output <RAM2ADDR> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<3>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<4>> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_WE> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<5>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<6>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<7>> is never assigned.
-WARNING:Xst:647 - Input <RESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2565 - Inout <RAM1DATA<8>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<9>> is never assigned.
-WARNING:Xst:647 - Input <PS2KB_DATA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <SW_DIP> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1306 - Output <RAM2_EN> is never assigned.
-WARNING:Xst:1306 - Output <U_TXD> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_CE1> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_VPEN> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_CE2> is never assigned.
-WARNING:Xst:647 - Input <CLK_FROM_KEY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1306 - Output <VGA_HHYNC> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<10>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<11>> is never assigned.
-WARNING:Xst:647 - Input <CLK0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <CLK1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2565 - Inout <FLASH_D<12>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<0>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<13>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<1>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<14>> is never assigned.
-WARNING:Xst:1306 - Output <RAM2_OE> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<2>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<15>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<3>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<10>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<4>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<11>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<10>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<5>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<12>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<11>> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_CE> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<6>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<13>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<12>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<7>> is never assigned.
-WARNING:Xst:1306 - Output <RAM1_EN> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<14>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<13>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<8>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<15>> is never assigned.
-WARNING:Xst:1306 - Output <RAM2_RW> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<14>> is never assigned.
-WARNING:Xst:2565 - Inout <FLASH_D<9>> is never assigned.
-WARNING:Xst:1306 - Output <VGA_B> is never assigned.
-WARNING:Xst:1306 - Output <VGA_VHYNC> is never assigned.
-WARNING:Xst:2565 - Inout <RAM1DATA<15>> is never assigned.
-WARNING:Xst:1306 - Output <VGA_G> is never assigned.
-WARNING:Xst:1306 - Output <VGA_R> is never assigned.
-WARNING:Xst:1306 - Output <FPGA_LED> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<0>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<1>> is never assigned.
-WARNING:Xst:1306 - Output <RAM1ADDR> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<2>> is never assigned.
-WARNING:Xst:1306 - Output <RAM1_OE> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<3>> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_BYTE> is never assigned.
-WARNING:Xst:1306 - Output <DYP1> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<4>> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_OE> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<5>> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<6>> is never assigned.
-WARNING:Xst:1306 - Output <FLASH_STS> is never assigned.
-WARNING:Xst:2565 - Inout <RAM2DATA<7>> is never assigned.
 Unit <Main> synthesized.
 
 
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 7-bit up counter                                      : 2
+
 =========================================================================
 
 =========================================================================
@@ -228,7 +196,10 @@ Found no macro
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+
 =========================================================================
 
 =========================================================================
@@ -274,10 +245,12 @@ Design Statistics
 # IOs                              : 187
 
 Cell Usage :
-# BELS                             : 1
+# BELS                             : 2
 #      GND                         : 1
-# IO Buffers                       : 7
-#      OBUF                        : 7
+#      VCC                         : 1
+# IO Buffers                       : 185
+#      IBUF                        : 19
+#      OBUF                        : 166
 =========================================================================
 
 Device utilization summary:
@@ -287,7 +260,7 @@ Selected Device : 3s1200efg320-4
 
  Number of Slices:                        0  out of   8672     0%  
  Number of IOs:                         187
- Number of bonded IOBs:                   7  out of    250     2%  
+ Number of bonded IOBs:                 185  out of    250    74%  
 
 ---------------------------
 Partition Resource Summary:
@@ -320,11 +293,29 @@ Speed Grade: -4
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Maximum combinational path delay: 4.910ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Delay:               4.910ns (Levels of Logic = 2)
+  Source:            SW_DIP<15> (PAD)
+  Destination:       FPGA_LED<15> (PAD)
+
+  Data Path: SW_DIP<15> to FPGA_LED<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  SW_DIP_15_IBUF (SW_DIP_15_IBUF)
+     OBUF:I->O                 3.272          FPGA_LED_15_OBUF (FPGA_LED<15>)
+    ----------------------------------------
+    Total                      4.910ns (4.490ns logic, 0.420ns route)
+                                       (91.4% logic, 8.6% route)
 
 =========================================================================
 
@@ -334,9 +325,9 @@ Total CPU time to Xst completion: 4.51 secs
  
 --> 
 
-Total memory usage is 291612 kilobytes
+Total memory usage is 307804 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   82 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

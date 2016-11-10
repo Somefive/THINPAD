@@ -1,0 +1,7 @@
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.vhi -module PCALU -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PCALU.vhd 
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.vhi -module PCALU -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PCALU.vhd 
+vhdtdtfi -lib work PCALU.vhd -prj THINPAD -o PCALU.spl -module PCALU -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PCALU.spl D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.sym 
+vhdtdtfi -lib work PCALU.vhd -prj THINPAD -o PCALU.spl -module PCALU -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PCALU.spl D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.sym 
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.vhi -module PCALU -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PCALU.vhd 

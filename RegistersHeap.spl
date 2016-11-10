@@ -1,0 +1,10 @@
+[Inputs]
+WriteEN
+=ReadRegister1[2:0]=
+=ReadRegister2[2:0]=
+=WriteRegister[2:0]=
+=WriteData[15:0]=
+[Outputs]
+=ReadData1[15:0]=
+=ReadData2[15:0]=
+[BiDir]

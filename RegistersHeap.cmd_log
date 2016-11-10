@@ -1,0 +1,9 @@
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhi -module RegistersHeap -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RegistersHeap.vhd 
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhi -module RegistersHeap -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RegistersHeap.vhd 
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhi -module RegistersHeap -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RegistersHeap.vhd 
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhi -module RegistersHeap -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RegistersHeap.vhd 
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhi -module RegistersHeap -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RegistersHeap.vhd 
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhi -module RegistersHeap -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RegistersHeap.vhd 
+vhdtdtfi -lib work RegistersHeap.vhd -prj THINPAD -o RegistersHeap.spl -module RegistersHeap -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e RegistersHeap.spl D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.sym 
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhi -module RegistersHeap -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RegistersHeap.vhd 

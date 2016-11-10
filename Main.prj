@@ -1,1 +1,4 @@
+vhdl work "DigitLights.vhd"
+vhdl work "Timer.vhd"
+vhdl work "CPU.vhd"
 vhdl work "Main.vhd"

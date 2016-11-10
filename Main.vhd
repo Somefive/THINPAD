@@ -72,10 +72,93 @@ end Main;
 
 architecture Behavioral of Main is
 
+component Timer is
+    Port ( CLK0 : in  STD_LOGIC;
+           CLK1 : in  STD_LOGIC;
+           CLK_FROM_KEY : in  STD_LOGIC;
+           CLK_OUT : out STD_LOGIC);
+end component;
+
+component CPU is
+    Port ( FLASH_A : out  STD_LOGIC_VECTOR (22 downto 0);
+           FLASH_D : inout  STD_LOGIC_VECTOR (15 downto 0);
+           SW_DIP : in  STD_LOGIC_VECTOR (15 downto 0);
+           VGA_B : out  STD_LOGIC_VECTOR (2 downto 0);
+           VGA_G : out  STD_LOGIC_VECTOR (2 downto 0);
+           VGA_R : out  STD_LOGIC_VECTOR (2 downto 0);
+           VGA_HHYNC : out  STD_LOGIC;
+           VGA_VHYNC : out  STD_LOGIC;
+           PS2KB_CLOCK : out  STD_LOGIC;
+           PS2KB_DATA : in  STD_LOGIC;
+           RAM1DATA : inout  STD_LOGIC_VECTOR (15 downto 0);
+           RAM2DATA : inout  STD_LOGIC_VECTOR (15 downto 0);
+           RAM1ADDR : out  STD_LOGIC_VECTOR (17 downto 0);
+           RAM2ADDR : out  STD_LOGIC_VECTOR (17 downto 0);
+           FLASH_BYTE : out  STD_LOGIC;
+           FLASH_CE : out  STD_LOGIC;
+           FLASH_CE1 : out  STD_LOGIC;
+           FLASH_CE2 : out  STD_LOGIC;
+           FLASH_OE : out  STD_LOGIC;
+           FLASH_RP : out  STD_LOGIC;
+           FLASH_STS : out  STD_LOGIC;
+           FLASH_VPEN : out  STD_LOGIC;
+           FLASH_WE : out  STD_LOGIC;
+           U_RXD : out  STD_LOGIC;
+           U_TXD : out  STD_LOGIC;
+           RAM1_EN : out  STD_LOGIC;
+           RAM1_OE : out  STD_LOGIC;
+           RAM1_RW : out  STD_LOGIC;
+           RAM2_EN : out  STD_LOGIC;
+           RAM2_OE : out  STD_LOGIC;
+           RAM2_RW : out  STD_LOGIC;
+           FPGA_LED : out  STD_LOGIC_VECTOR (15 downto 0);
+			  DYP0 : out  STD_LOGIC_VECTOR (6 downto 0);
+           DYP1 : out  STD_LOGIC_VECTOR (6 downto 0);
+           CLK : in  STD_LOGIC;
+           RESET : in  STD_LOGIC);
+end component;
+
+signal CLK_CPU: STD_LOGIC;
+
+
 begin
-	process(CLK0)
-	begin
-		DYP0 <= "0000000";
-	end process;
+	TIMER_ENTITY: Timer port map (CLK0,CLK1,CLK_FROM_KEY,CLK_CPU);
+	CPU_ENTITY: CPU port map (
+           FLASH_A,
+			  FLASH_D,
+           SW_DIP,
+			  VGA_B,
+			  VGA_G,
+           VGA_R,
+           VGA_HHYNC,
+           VGA_VHYNC,
+           PS2KB_CLOCK,
+           PS2KB_DATA,
+           RAM1DATA,
+           RAM2DATA,
+           RAM1ADDR,
+           RAM2ADDR,
+           FLASH_BYTE,
+           FLASH_CE,
+           FLASH_CE1,
+           FLASH_CE2,
+           FLASH_OE,
+           FLASH_RP,
+           FLASH_STS,
+           FLASH_VPEN,
+           FLASH_WE,
+           U_RXD,
+           U_TXD,
+           RAM1_EN,
+           RAM1_OE,
+           RAM1_RW,
+           RAM2_EN,
+           RAM2_OE,
+           RAM2_RW,
+           FPGA_LED,
+			  DYP0,
+           DYP1,
+           CLK_CPU,
+           RESET);
 end Behavioral;
 

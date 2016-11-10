@@ -1,0 +1,3 @@
+vhdtdtfi -lib work Comparator.vhd -prj THINPAD -o Comparator.spl -module Comparator -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Comparator.spl D:/Study/THU/2016Autumn/CPU/THINPAD/Comparator.sym 
+vhdtdtfi -prj THINPAD -o D:/Study/THU/2016Autumn/CPU/THINPAD/Comparator.vhi -module Comparator -template D:/Program/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Comparator.vhd 

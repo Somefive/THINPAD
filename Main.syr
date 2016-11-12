@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Main.prj
 
@@ -108,18 +108,47 @@ Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd" in Lib
 Architecture behavioral of Entity digitlights is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhd" in Library work.
 Architecture behavioral of Entity registersheap is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.vhd" in Library work.
+Architecture behavioral of Entity pcalu is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Comparator.vhd" in Library work.
+Architecture behavioral of Entity comparator is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/InstructionMemory.vhd" in Library work.
+Architecture behavioral of Entity instructionmemory is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/DataMemory.vhd" in Library work.
+Architecture behavioral of Entity datamemory is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegister.vhd" in Library work.
 Architecture behavioral of Entity selectorwriteregister is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegisterData.vhd" in Library work.
 Architecture behavioral of Entity selectorwriteregisterdata is up to date.
-Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd" in Library work.
-Architecture behavioral of Entity alu is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam1.vhd" in Library work.
 Architecture behavioral of Entity selectoraluparam1 is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam2.vhd" in Library work.
 Architecture behavioral of Entity selectoraluparam2 is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorShiftParam.vhd" in Library work.
 Architecture behavioral of Entity selectorshiftparam is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorImmediate.vhd" in Library work.
+Architecture behavioral of Entity selectorimmediate is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorSPInput.vhd" in Library work.
+Architecture behavioral of Entity selectorspinput is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorDataMemoryWriteData.vhd" in Library work.
+Architecture behavioral of Entity selectordatamemorywritedata is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorCMPParam.vhd" in Library work.
+Architecture behavioral of Entity selectorcmpparam is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCBJ.vhd" in Library work.
+Architecture behavioral of Entity selectorpcbj is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCALUAdder.vhd" in Library work.
+Architecture behavioral of Entity selectorpcaluadder is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCALUOp.vhd" in Library work.
+Architecture behavioral of Entity selectorpcaluop is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SingleRegister.vhd" in Library work.
+Architecture behavioral of Entity singleregister is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/OneBitRegister.vhd" in Library work.
+Architecture behavioral of Entity onebitregister is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Controller.vhd" in Library work.
+Entity <controller> compiled.
+Entity <controller> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd" in Library work.
 Architecture behavioral of Entity timer is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/CPU.vhd" in Library work.
@@ -141,17 +170,45 @@ Analyzing hierarchy for entity <DigitLights> in library <work> (architecture <be
 
 Analyzing hierarchy for entity <RegistersHeap> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PCALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comparator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <InstructionMemory> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DataMemory> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <SelectorWriteRegister> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <SelectorWriteRegisterData> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <SelectorALUParam1> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <SelectorALUParam2> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <SelectorShiftParam> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorImmediate> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorSPInput> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorDataMemoryWriteData> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorCMPParam> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorPCBJ> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorPCALUAdder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SelectorPCALUOp> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SingleRegister> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <OneBitRegister> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Controller> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
@@ -173,14 +230,26 @@ Entity <DigitLights> analyzed. Unit <DigitLights> generated.
 Analyzing Entity <RegistersHeap> in library <work> (Architecture <behavioral>).
 Entity <RegistersHeap> analyzed. Unit <RegistersHeap> generated.
 
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <PCALU> in library <work> (Architecture <behavioral>).
+Entity <PCALU> analyzed. Unit <PCALU> generated.
+
+Analyzing Entity <Comparator> in library <work> (Architecture <behavioral>).
+Entity <Comparator> analyzed. Unit <Comparator> generated.
+
+Analyzing Entity <InstructionMemory> in library <work> (Architecture <behavioral>).
+Entity <InstructionMemory> analyzed. Unit <InstructionMemory> generated.
+
+Analyzing Entity <DataMemory> in library <work> (Architecture <behavioral>).
+Entity <DataMemory> analyzed. Unit <DataMemory> generated.
+
 Analyzing Entity <SelectorWriteRegister> in library <work> (Architecture <behavioral>).
 Entity <SelectorWriteRegister> analyzed. Unit <SelectorWriteRegister> generated.
 
 Analyzing Entity <SelectorWriteRegisterData> in library <work> (Architecture <behavioral>).
 Entity <SelectorWriteRegisterData> analyzed. Unit <SelectorWriteRegisterData> generated.
-
-Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
-Entity <ALU> analyzed. Unit <ALU> generated.
 
 Analyzing Entity <SelectorALUParam1> in library <work> (Architecture <behavioral>).
 Entity <SelectorALUParam1> analyzed. Unit <SelectorALUParam1> generated.
@@ -190,6 +259,38 @@ Entity <SelectorALUParam2> analyzed. Unit <SelectorALUParam2> generated.
 
 Analyzing Entity <SelectorShiftParam> in library <work> (Architecture <behavioral>).
 Entity <SelectorShiftParam> analyzed. Unit <SelectorShiftParam> generated.
+
+Analyzing Entity <SelectorImmediate> in library <work> (Architecture <behavioral>).
+Entity <SelectorImmediate> analyzed. Unit <SelectorImmediate> generated.
+
+Analyzing Entity <SelectorSPInput> in library <work> (Architecture <behavioral>).
+Entity <SelectorSPInput> analyzed. Unit <SelectorSPInput> generated.
+
+Analyzing Entity <SelectorDataMemoryWriteData> in library <work> (Architecture <behavioral>).
+Entity <SelectorDataMemoryWriteData> analyzed. Unit <SelectorDataMemoryWriteData> generated.
+
+Analyzing Entity <SelectorCMPParam> in library <work> (Architecture <behavioral>).
+Entity <SelectorCMPParam> analyzed. Unit <SelectorCMPParam> generated.
+
+Analyzing Entity <SelectorPCBJ> in library <work> (Architecture <behavioral>).
+Entity <SelectorPCBJ> analyzed. Unit <SelectorPCBJ> generated.
+
+Analyzing Entity <SelectorPCALUAdder> in library <work> (Architecture <behavioral>).
+Entity <SelectorPCALUAdder> analyzed. Unit <SelectorPCALUAdder> generated.
+
+Analyzing Entity <SelectorPCALUOp> in library <work> (Architecture <behavioral>).
+Entity <SelectorPCALUOp> analyzed. Unit <SelectorPCALUOp> generated.
+
+Analyzing Entity <SingleRegister> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/Study/THU/2016Autumn/CPU/THINPAD/SingleRegister.vhd" line 40: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Input>
+Entity <SingleRegister> analyzed. Unit <SingleRegister> generated.
+
+Analyzing Entity <OneBitRegister> in library <work> (Architecture <behavioral>).
+Entity <OneBitRegister> analyzed. Unit <OneBitRegister> generated.
+
+Analyzing Entity <Controller> in library <work> (Architecture <behavioral>).
+Entity <Controller> analyzed. Unit <Controller> generated.
 
 
 =========================================================================
@@ -234,6 +335,84 @@ WARNING:Xst:737 - Found 16-bit latch for signal <REG7>. Latches may be generated
 Unit <RegistersHeap> synthesized.
 
 
+Synthesizing Unit <ALU>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd".
+    Found 16-bit addsub for signal <Result$addsub0000>.
+    Found 16-bit shifter logical left for signal <Result$shift0004> created at line 52.
+    Found 16-bit shifter arithmetic right for signal <Result$shift0005> created at line 53.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <PCALU>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.vhd".
+    Found 16-bit adder for signal <Result>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PCALU> synthesized.
+
+
+Synthesizing Unit <Comparator>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/Comparator.vhd".
+    Found 16-bit comparator equal for signal <Result$cmp_eq0000> created at line 45.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Comparator> synthesized.
+
+
+Synthesizing Unit <InstructionMemory>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/InstructionMemory.vhd".
+WARNING:Xst:1780 - Signal <Writing> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <step>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 9                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | BOOT                      (negative)           |
+    | Power Up State     | 000000                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 18-bit register for signal <ADDR>.
+    Found 1-bit register for signal <OE>.
+    Found 16-bit register for signal <Instruction>.
+    Found 1-bit register for signal <WE>.
+    Found 16-bit tristate buffer for signal <DATA>.
+    Found 16-bit register for signal <Mtridata_DATA> created at line 61.
+    Found 1-bit register for signal <Mtrien_DATA> created at line 61.
+    Found 1-bit register for signal <Reading>.
+    Found 1-bit register for signal <RUNNABLE>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  55 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <InstructionMemory> synthesized.
+
+
+Synthesizing Unit <DataMemory>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/DataMemory.vhd".
+    Found 18-bit register for signal <ADDR>.
+    Found 1-bit register for signal <EN>.
+    Found 1-bit register for signal <OE>.
+    Found 1-bit register for signal <WE>.
+    Found 16-bit register for signal <ReadData>.
+    Found 16-bit tristate buffer for signal <DATA>.
+    Found 18-bit 4-to-1 multiplexer for signal <ADDR$mux0000>.
+    Found 16-bit register for signal <Mtridata_DATA> created at line 71.
+    Found 1-bit register for signal <Mtrien_DATA> created at line 71.
+    Found 1-bit register for signal <Reading>.
+    Found 1-bit register for signal <Writing>.
+    Summary:
+	inferred  56 D-type flip-flop(s).
+	inferred  18 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <DataMemory> synthesized.
+
+
 Synthesizing Unit <SelectorWriteRegister>.
     Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegister.vhd".
     Found 3-bit 4-to-1 multiplexer for signal <output>.
@@ -248,17 +427,6 @@ Synthesizing Unit <SelectorWriteRegisterData>.
     Summary:
 	inferred  16 Multiplexer(s).
 Unit <SelectorWriteRegisterData> synthesized.
-
-
-Synthesizing Unit <ALU>.
-    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd".
-    Found 16-bit addsub for signal <Result$addsub0000>.
-    Found 16-bit shifter logical left for signal <Result$shift0004> created at line 52.
-    Found 16-bit shifter arithmetic right for signal <Result$shift0005> created at line 53.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred   2 Combinational logic shifter(s).
-Unit <ALU> synthesized.
 
 
 Synthesizing Unit <SelectorALUParam1>.
@@ -282,21 +450,103 @@ Synthesizing Unit <SelectorShiftParam>.
 Unit <SelectorShiftParam> synthesized.
 
 
+Synthesizing Unit <SelectorImmediate>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorImmediate.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <SelectedImmediate>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <SelectorImmediate> synthesized.
+
+
+Synthesizing Unit <SelectorSPInput>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorSPInput.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <SPInput>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <SelectorSPInput> synthesized.
+
+
+Synthesizing Unit <SelectorDataMemoryWriteData>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorDataMemoryWriteData.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <DataMemoryWriteData>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <SelectorDataMemoryWriteData> synthesized.
+
+
+Synthesizing Unit <SelectorCMPParam>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorCMPParam.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <ComparatorParam2>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <SelectorCMPParam> synthesized.
+
+
+Synthesizing Unit <SelectorPCBJ>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCBJ.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <PCInput>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <SelectorPCBJ> synthesized.
+
+
+Synthesizing Unit <SelectorPCALUAdder>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCALUAdder.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <PCALUAdder>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <SelectorPCALUAdder> synthesized.
+
+
+Synthesizing Unit <SelectorPCALUOp>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCALUOp.vhd".
+    Found 2-bit 8-to-1 multiplexer for signal <SelectorOfPCALUAdder>.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <SelectorPCALUOp> synthesized.
+
+
+Synthesizing Unit <SingleRegister>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/SingleRegister.vhd".
+WARNING:Xst:737 - Found 16-bit latch for signal <Output>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <SingleRegister> synthesized.
+
+
+Synthesizing Unit <OneBitRegister>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/OneBitRegister.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <Output>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <OneBitRegister> synthesized.
+
+
+Synthesizing Unit <Controller>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/Controller.vhd".
+WARNING:Xst:1305 - Output <SelectorOfImmediate> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <SelectorOfPCBJ> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <SelectorOfWriteRegister> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <RegisterHeapEN> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <SelectorOfALUParam1> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <SelectorOfALUParam2> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <PCWriteEN> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <SelectorOfWriteRegisterData> is never assigned. Tied to value 000.
+WARNING:Xst:647 - Input <Instruction> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <SPWriteEN> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <IHWriteEN> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <DataMemoryMode> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <SelectorOfPCALUOp> is never assigned. Tied to value 000.
+WARNING:Xst:1305 - Output <TWriteEN> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <SelectorOfSPInput> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <ALUOperator> is never assigned. Tied to value 0000.
+WARNING:Xst:647 - Input <Period> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <SelectorOfCMPParam> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <SelectorOfDataMemoryWriteData> is never assigned. Tied to value 00.
+WARNING:Xst:1305 - Output <InstructionMemoryMode> is never assigned. Tied to value 00.
+Unit <Controller> synthesized.
+
+
 Synthesizing Unit <CPU>.
     Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/CPU.vhd".
-WARNING:Xst:653 - Signal <SelectorOfWriteRegisterData> is used but never assigned. This sourceless signal will be automatically connected to value 000.
-WARNING:Xst:653 - Signal <SelectorOfWriteRegister> is used but never assigned. This sourceless signal will be automatically connected to value 00.
-WARNING:Xst:653 - Signal <SelectorOfALUParam2> is used but never assigned. This sourceless signal will be automatically connected to value 00.
-WARNING:Xst:653 - Signal <SelectorOfALUParam1> is used but never assigned. This sourceless signal will be automatically connected to value 00.
-WARNING:Xst:653 - Signal <SelectedImmediate> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
-WARNING:Xst:653 - Signal <SP> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
-WARNING:Xst:653 - Signal <RegisterHeapEN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
-WARNING:Xst:653 - Signal <PC> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
-WARNING:Xst:646 - Signal <Instruction<15:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <IH> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
-WARNING:Xst:1780 - Signal <DataMemoryWriteData> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <DataMemoryReadData> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
-WARNING:Xst:653 - Signal <ALUOperator> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <Period> is used but never assigned. This sourceless signal will be automatically connected to value 000.
+WARNING:Xst:653 - Signal <InstructionMemoryBoot> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <CPU> synthesized.
 
 
@@ -312,19 +562,31 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 1
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
  16-bit addsub                                         : 1
 # Counters                                             : 2
  7-bit up counter                                      : 2
-# Latches                                              : 8
- 16-bit latch                                          : 8
-# Multiplexers                                         : 6
- 16-bit 4-to-1 multiplexer                             : 2
+# Registers                                            : 17
+ 1-bit register                                        : 11
+ 16-bit register                                       : 4
+ 18-bit register                                       : 2
+# Latches                                              : 12
+ 1-bit latch                                           : 1
+ 16-bit latch                                          : 11
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 14
+ 16-bit 4-to-1 multiplexer                             : 8
  16-bit 8-to-1 multiplexer                             : 3
+ 18-bit 4-to-1 multiplexer                             : 1
+ 2-bit 8-to-1 multiplexer                              : 1
  3-bit 4-to-1 multiplexer                              : 1
 # Logic shifters                                       : 2
  16-bit shifter arithmetic right                       : 1
  16-bit shifter logical left                           : 1
+# Tristates                                            : 2
+ 16-bit tristate buffer                                : 2
 
 =========================================================================
 
@@ -332,34 +594,341 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <RegisterHeap_Entity> is unconnected in block <CPU_ENTITY>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SelectorWriteRegister_Entity> is unconnected in block <CPU_ENTITY>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SelectorWriteRegisterData_Entity> is unconnected in block <CPU_ENTITY>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <ALU_Entity> is unconnected in block <CPU_ENTITY>.
-   It will be removed from the design.
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <CPU_ENTITY/InstructionMemory_Entity/step/FSM> on signal <step[1:8]> with one-hot encoding.
+--------------------
+ State  | Encoding
+--------------------
+ 000000 | 00000001
+ 000001 | 00000010
+ 000010 | 00000100
+ 000011 | 00001000
+ 000100 | 00010000
+ 000101 | 00100000
+ 000110 | 01000000
+ 000111 | 10000000
+--------------------
 WARNING:Xst:1290 - Hierarchical block <SelectorALUParam1_Entity> is unconnected in block <CPU_ENTITY>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <SelectorALUParam2_Entity> is unconnected in block <CPU_ENTITY>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <SelectorShiftParam_Entity> is unconnected in block <CPU_ENTITY>.
    It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorImmediate_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorSPInput_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SPRegister> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <Writing> in Unit <DataMemory_Entity> is equivalent to the following FF/Latch, which will be removed : <WE> 
+INFO:Xst:2261 - The FF/Latch <Reading> in Unit <DataMemory_Entity> is equivalent to the following FF/Latch, which will be removed : <OE> 
+WARNING:Xst:1426 - The value init of the FF/Latch FFd8 hinder the constant cleaning in the block FSM.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <Instruction_5> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_6> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_7> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_8> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_9> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_10> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtrien_DATA> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Reading> has a constant value of 1 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_0> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_1> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_2> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_3> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_4> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_5> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_6> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_7> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_8> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_9> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_10> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_11> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_12> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_13> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_14> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_15> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_0> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_1> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_2> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_3> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_4> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_5> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_2> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_3> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_4> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_5> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_6> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_7> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_8> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_9> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_10> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_11> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_12> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_13> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_14> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_15> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_16> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_17> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <OE> (without init value) has a constant value of 1 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtrien_DATA> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_0> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_1> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_2> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_3> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Instruction_4> (without init value) has a constant value of 0 in block <InstructionMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <Output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_6> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_7> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_8> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_9> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_10> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_11> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_12> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_13> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_14> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_15> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_16> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_17> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_0> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_1> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_2> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_3> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_4> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_5> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_6> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_7> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_8> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_9> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_10> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_11> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_12> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_13> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_14> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ReadData_15> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Writing> has a constant value of 1 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Instruction_11> of sequential type is unconnected in block <InstructionMemory_Entity>.
+WARNING:Xst:2677 - Node <Instruction_12> of sequential type is unconnected in block <InstructionMemory_Entity>.
+WARNING:Xst:2677 - Node <Instruction_13> of sequential type is unconnected in block <InstructionMemory_Entity>.
+WARNING:Xst:2677 - Node <Instruction_14> of sequential type is unconnected in block <InstructionMemory_Entity>.
+WARNING:Xst:2677 - Node <Instruction_15> of sequential type is unconnected in block <InstructionMemory_Entity>.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<1> Mtridata_DATA<1> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<2> Mtridata_DATA<2> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<3> Mtridata_DATA<3> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<4> Mtridata_DATA<4> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<5> Mtridata_DATA<5> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<6> Mtridata_DATA<6> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<7> Mtridata_DATA<7> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<8> Mtridata_DATA<8> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<9> Mtridata_DATA<9> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<10> Mtridata_DATA<10> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<11> Mtridata_DATA<11> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<12> Mtridata_DATA<12> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<13> Mtridata_DATA<13> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<14> Mtridata_DATA<14> signal will be lost.
+WARNING:Xst:638 - in unit CPU_ENTITY/DataMemory_Entity Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<15> Mtridata_DATA<15> signal will be lost.
+WARNING:Xst:1710 - FF/Latch <Mtrien_DATA> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <PCALU_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Comparator_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <Mtrien_DATA> of sequential type is unconnected in block <InstructionMemory_Entity>.
+WARNING:Xst:1290 - Hierarchical block <SelectorDataMemoryWriteData_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorCMPParam_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorPCBJ_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorPCALUAdder_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SelectorPCALUOp_Entity> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <TRegister> is unconnected in block <CPU_ENTITY>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <Mtrien_DATA> (without init value) has a constant value of 0 in block <DataMemory_Entity>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# FSMs                                                 : 1
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 1
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
  16-bit addsub                                         : 1
-# Latches                                              : 8
- 16-bit latch                                          : 8
-# Multiplexers                                         : 6
- 16-bit 4-to-1 multiplexer                             : 2
+# Registers                                            : 111
+ Flip-Flops                                            : 111
+# Latches                                              : 12
+ 1-bit latch                                           : 1
+ 16-bit latch                                          : 11
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 14
+ 16-bit 4-to-1 multiplexer                             : 8
  16-bit 8-to-1 multiplexer                             : 3
+ 18-bit 4-to-1 multiplexer                             : 1
+ 2-bit 8-to-1 multiplexer                              : 1
  3-bit 4-to-1 multiplexer                              : 1
 # Logic shifters                                       : 2
  16-bit shifter arithmetic right                       : 1
@@ -370,138 +939,303 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1294 - Latch <REG7_0> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_1> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_2> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_3> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_4> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_5> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_6> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_7> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_8> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_9> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_10> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_11> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_12> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_13> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_14> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG7_15> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_0> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_1> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_2> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_3> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_4> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_5> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_6> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_7> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_8> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_9> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_10> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_11> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_12> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_13> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_14> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG6_15> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_0> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_1> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_2> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_3> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_4> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_5> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_6> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_7> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_8> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_9> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_10> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_11> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_12> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_13> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_14> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG5_15> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_0> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_1> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_2> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_3> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_4> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_5> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_6> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_7> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_8> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_9> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_10> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_11> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_12> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_13> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_14> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG4_15> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_0> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_1> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_2> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_3> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_4> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_5> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_6> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_7> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_8> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_9> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_10> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_11> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_12> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_13> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_14> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG3_15> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_0> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_1> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_2> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_3> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_4> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_5> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_6> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_7> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_8> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_9> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_10> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_11> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_12> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_13> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_14> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG2_15> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_0> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_1> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_2> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_3> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_4> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_5> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_6> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_7> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_8> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_9> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_10> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_11> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_12> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_13> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_14> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG1_15> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_0> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_1> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_2> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_3> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_4> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_5> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_6> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_7> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_8> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_9> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_10> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_11> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_12> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_13> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_14> is equivalent to a wire in block <RegistersHeap>.
-WARNING:Xst:1294 - Latch <REG0_15> is equivalent to a wire in block <RegistersHeap>.
+WARNING:Xst:1426 - The value init of the FF/Latch FSM_FFd8 hinder the constant cleaning in the block FSM_0-parent.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch RUNNABLE hinder the constant cleaning in the block InstructionMemory.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <ADDR_16> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_17> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Writing> in Unit <DataMemory> is equivalent to the following FF/Latch, which will be removed : <WE> 
+WARNING:Xst:1710 - FF/Latch <Instruction_15> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_14> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_13> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_12> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_11> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_10> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_9> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_8> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_7> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_6> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_5> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_4> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_3> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_2> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_1> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Instruction_0> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_2> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_3> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_4> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_5> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_6> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_7> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_8> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_9> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_10> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_11> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_12> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_13> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_14> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_15> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OE> (without init value) has a constant value of 1 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reading> has a constant value of 1 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtrien_DATA> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RUNNABLE> is unconnected in block <InstructionMemory>.
+WARNING:Xst:2677 - Node <Mtrien_DATA> of sequential type is unconnected in block <InstructionMemory>.
+WARNING:Xst:1710 - FF/Latch <ADDR_8> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_9> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_10> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_11> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_12> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_13> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_14> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_15> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_16> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_17> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_0> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_1> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_2> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_3> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_4> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_5> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_6> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_7> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_8> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_9> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_10> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_11> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_12> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_13> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_14> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadData_15> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OE> (without init value) has a constant value of 1 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtrien_DATA> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reading> has a constant value of 1 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_0> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_1> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_2> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_3> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_4> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_5> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_6> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_7> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_8> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_9> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_10> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_11> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_12> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_13> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_14> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_15> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_0> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_1> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_2> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_3> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_4> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_5> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_6> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_7> (without init value) has a constant value of 0 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Writing> has a constant value of 1 in block <DataMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtrien_DATA and Mtridata_DATA<0> Mtridata_DATA<0> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<1> Mtridata_DATA<1> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<2> Mtridata_DATA<2> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<3> Mtridata_DATA<3> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<4> Mtridata_DATA<4> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<5> Mtridata_DATA<5> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<6> Mtridata_DATA<6> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<7> Mtridata_DATA<7> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<8> Mtridata_DATA<8> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<9> Mtridata_DATA<9> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<10> Mtridata_DATA<10> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<11> Mtridata_DATA<11> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<12> Mtridata_DATA<12> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<13> Mtridata_DATA<13> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<14> Mtridata_DATA<14> signal will be lost.
+WARNING:Xst:638 - in unit DataMemory Conflict on KEEP property on signal Mtridata_DATA<0> and Mtridata_DATA<15> Mtridata_DATA<15> signal will be lost.
+WARNING:Xst:2677 - Node <Mtrien_DATA> of sequential type is unconnected in block <DataMemory>.
+WARNING:Xst:1710 - FF/Latch <REG2_3> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_2> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_1> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_0> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_15> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_14> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_13> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_12> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_11> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_10> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_9> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_8> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_7> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_6> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_5> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_4> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_3> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_2> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_1> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG3_0> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_15> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_14> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_13> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_12> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_11> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_10> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_9> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_8> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_15> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_14> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_13> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_12> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_11> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_10> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_9> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_8> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_7> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_6> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_5> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_4> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_3> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_2> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_1> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG1_0> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_15> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_14> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_13> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_12> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_11> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_10> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_9> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_8> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_7> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_6> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_5> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG2_4> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_11> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_10> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_9> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_8> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_7> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_6> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_5> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_4> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_3> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_2> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_1> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_0> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_15> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_14> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_13> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_12> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_11> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_10> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_9> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_8> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_7> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_6> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_5> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_4> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_3> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_2> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_1> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG7_0> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_7> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_6> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_5> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_4> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_3> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_2> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_1> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG4_0> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_15> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_14> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_13> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_12> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_11> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_10> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_9> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_8> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_7> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_6> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_5> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_4> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_3> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_2> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_1> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG5_0> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_15> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_14> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_13> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG6_12> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <TRegister/Output> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG0_0> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_1> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_2> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_3> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_4> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_5> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_6> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_7> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_8> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_9> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_10> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_11> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_12> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_13> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_14> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <REG0_15> (without init value) has a constant value of 0 in block <RegistersHeap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_0> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_1> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_2> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_3> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_4> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_5> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_6> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_7> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_8> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_9> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_10> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_11> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_12> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_13> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_14> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PCRegister/Output_15> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <SPRegister/Output_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_6> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_7> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_8> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_9> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_10> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_11> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_12> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_13> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_14> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <SPRegister/Output_15> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_6> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_7> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_8> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_9> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_10> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_11> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_12> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_13> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_14> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <IHRegister/Output_15> of sequential type is unconnected in block <CPU>.
 
 Optimizing unit <Main> ...
 
-Optimizing unit <RegistersHeap> ...
+Optimizing unit <InstructionMemory> ...
+WARNING:Xst:1710 - FF/Latch <Mtridata_DATA_13> (without init value) has a constant value of 1 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_DATA_14> (without init value) has a constant value of 1 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit InstructionMemory Conflict on KEEP property on signal Mtridata_DATA<13> and Mtridata_DATA<14> Mtridata_DATA<14> signal will be lost.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -512,7 +1246,10 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
 =========================================================================
 
 =========================================================================
@@ -540,9 +1277,18 @@ Design Statistics
 # IOs                              : 187
 
 Cell Usage :
-# BELS                             : 2
+# BELS                             : 27
 #      GND                         : 1
+#      LUT2                        : 1
+#      LUT2_D                      : 1
+#      LUT2_L                      : 6
+#      LUT4                        : 17
 #      VCC                         : 1
+# FlipFlops/Latches                : 26
+#      FDE                         : 25
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFG                        : 1
 # IO Buffers                       : 185
 #      IBUF                        : 19
 #      OBUF                        : 166
@@ -553,9 +1299,13 @@ Device utilization summary:
 
 Selected Device : 3s1200efg320-4 
 
- Number of Slices:                        0  out of   8672     0%  
+ Number of Slices:                       17  out of   8672     0%  
+ Number of Slice Flip Flops:             25  out of  17344     0%  
+ Number of 4 input LUTs:                 25  out of  17344     0%  
  Number of IOs:                         187
  Number of bonded IOBs:                 185  out of    250    74%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
 Partition Resource Summary:
@@ -575,54 +1325,104 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_FROM_KEY                       | IBUF+BUFG              | 26    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-No asynchronous control signals found in this design
+-----------------------------------+--------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                      | Load  |
+-----------------------------------+--------------------------------------+-------+
+N1(XST_VCC:P)                      | NONE(CPU_ENTITY/DataMemory_Entity/EN)| 1     |
+-----------------------------------+--------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: No path found
+   Minimum period: 3.975ns (Maximum Frequency: 251.572MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: 4.910ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: 4.937ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 19 / 19
+Timing constraint: Default period analysis for Clock 'CLK_FROM_KEY'
+  Clock period: 3.975ns (frequency: 251.572MHz)
+  Total number of paths / destination ports: 92 / 24
 -------------------------------------------------------------------------
-Delay:               4.910ns (Levels of Logic = 2)
-  Source:            SW_DIP<15> (PAD)
-  Destination:       FPGA_LED<15> (PAD)
+Delay:               3.975ns (Levels of Logic = 2)
+  Source:            CPU_ENTITY/InstructionMemory_Entity/step_FSM_FFd6 (FF)
+  Destination:       CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_15 (FF)
+  Source Clock:      CLK_FROM_KEY rising
+  Destination Clock: CLK_FROM_KEY rising
 
-  Data Path: SW_DIP<15> to FPGA_LED<15>
+  Data Path: CPU_ENTITY/InstructionMemory_Entity/step_FSM_FFd6 to CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.218   0.420  SW_DIP_15_IBUF (SW_DIP_15_IBUF)
-     OBUF:I->O                 3.272          FPGA_LED_15_OBUF (FPGA_LED<15>)
+     FDE:C->Q              6   0.591   0.844  CPU_ENTITY/InstructionMemory_Entity/step_FSM_FFd6 (CPU_ENTITY/InstructionMemory_Entity/step_FSM_FFd6)
+     LUT2_D:I0->O          9   0.704   0.824  CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_mux0000<0>11 (CPU_ENTITY/InstructionMemory_Entity/N1)
+     LUT4:I3->O            1   0.704   0.000  CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_mux0000<8>1 (CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_mux0000<8>)
+     FDE:D                     0.308          CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_7
     ----------------------------------------
-    Total                      4.910ns (4.490ns logic, 0.420ns route)
-                                       (91.4% logic, 8.6% route)
+    Total                      3.975ns (2.307ns logic, 1.668ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_FROM_KEY'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_15 (FF)
+  Destination:       RAM2DATA<15> (PAD)
+  Source Clock:      CLK_FROM_KEY rising
+
+  Data Path: CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_15 to RAM2DATA<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_15 (CPU_ENTITY/InstructionMemory_Entity/Mtridata_DATA_15)
+     OBUF:I->O                 3.272          RAM2DATA_15_OBUF (RAM2DATA<15>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Delay:               4.937ns (Levels of Logic = 2)
+  Source:            CLK_FROM_KEY (PAD)
+  Destination:       DYP1<1> (PAD)
+
+  Data Path: CLK_FROM_KEY to DYP1<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.447  CLK_FROM_KEY_IBUF (CLK_FROM_KEY_IBUF1)
+     OBUF:I->O                 3.272          DYP1_1_OBUF (DYP1<1>)
+    ----------------------------------------
+    Total                      4.937ns (4.490ns logic, 0.447ns route)
+                                       (90.9% logic, 9.1% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.69 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.06 secs
  
 --> 
 
-Total memory usage is 307820 kilobytes
+Total memory usage is 323984 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  156 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :  605 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

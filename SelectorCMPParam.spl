@@ -1,0 +1,7 @@
+[Inputs]
+=SignalOfReadRegisterData2[15:0]=
+=Instruction7to0[7:0]=
+=SelectorOfCMPParam[1:0]=
+[Outputs]
+=ComparatorParam2[15:0]=
+[BiDir]

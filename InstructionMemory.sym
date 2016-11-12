@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="InstructionMemory">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-11-11T9:59:24</timestamp>
+    <pin polarity="Input" x="0" y="-352" name="CLK" />
+    <pin polarity="Input" x="0" y="-256" name="BOOT" />
+    <pin polarity="Input" x="0" y="-160" name="ReadAddress(15:0)" />
+    <pin polarity="Input" x="0" y="-64" name="MODE(2:0)" />
+    <pin polarity="Output" x="512" y="-352" name="OE" />
+    <pin polarity="Output" x="512" y="-288" name="WE" />
+    <pin polarity="Output" x="512" y="-224" name="EN" />
+    <pin polarity="Output" x="512" y="-160" name="Instruction(15:0)" />
+    <pin polarity="Output" x="512" y="-96" name="Address(17:0)" />
+    <pin polarity="BiDirectional" x="512" y="-32" name="Data(15:0)" />
+    <graph>
+        <rect width="384" x="64" y="-384" height="384" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="256" y="-392" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin CLK" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-256" type="pin BOOT" />
+        <line x2="0" y1="-256" y2="-256" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin ReadAddress(15:0)" />
+        <rect width="64" x="0" y="-172" height="24" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-64" type="pin MODE(2:0)" />
+        <rect width="64" x="0" y="-76" height="24" />
+        <line x2="0" y1="-64" y2="-64" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-352" type="pin OE" />
+        <line x2="512" y1="-352" y2="-352" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-288" type="pin WE" />
+        <line x2="512" y1="-288" y2="-288" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-224" type="pin EN" />
+        <line x2="512" y1="-224" y2="-224" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-160" type="pin Instruction(15:0)" />
+        <rect width="64" x="448" y="-172" height="24" />
+        <line x2="512" y1="-160" y2="-160" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-96" type="pin Address(17:0)" />
+        <rect width="64" x="448" y="-108" height="24" />
+        <line x2="512" y1="-96" y2="-96" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-32" type="pin Data(15:0)" />
+        <rect width="64" x="448" y="-44" height="24" />
+        <line x2="512" y1="-32" y2="-32" x1="448" />
+    </graph>
+</symbol>

@@ -1,0 +1,7 @@
+[Inputs]
+=SignalOfReadRegisterData2[15:0]=
+=SignalOfReadRegisterData1[15:0]=
+=selector[1:0]=
+[Outputs]
+=DataMemoryWriteData[15:0]=
+[BiDir]

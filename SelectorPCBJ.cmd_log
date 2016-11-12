@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SelectorPCBJ.vhd -prj THINPAD -o SelectorPCBJ.spl -module SelectorPCBJ -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorPCBJ.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCBJ.sym 

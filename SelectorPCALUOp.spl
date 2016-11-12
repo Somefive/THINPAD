@@ -1,0 +1,7 @@
+[Inputs]
+TOutput
+=SignalOfReadRegisterData1[15:0]=
+=SelectorOfPCALUOp[2:0]=
+[Outputs]
+=SelectorOfPCALUAdder[1:0]=
+[BiDir]

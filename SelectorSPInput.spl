@@ -1,0 +1,7 @@
+[Inputs]
+=ReadRegisterData1[15:0]=
+=ALUResult[15:0]=
+=selector[1:0]=
+[Outputs]
+[BiDir]
+=SP[15:0]=

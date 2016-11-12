@@ -1,0 +1,7 @@
+[Inputs]
+=Instruction7to0[7:0]=
+=Instruction3to0[3:0]=
+=selector[1:0]=
+[Outputs]
+=SelectedImmediate[15:0]=
+[BiDir]

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SelectorDataMemoryWriteData.vhd -prj THINPAD -o SelectorDataMemoryWriteData.spl -module SelectorDataMemoryWriteData -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorDataMemoryWriteData.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorDataMemoryWriteData.sym 

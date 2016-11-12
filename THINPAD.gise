@@ -29,12 +29,27 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ALU.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="ALU.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CPU.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="CPU.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="CPU.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CPU.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="CPU.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Comparator.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="Comparator.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Comparator.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Comparator.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="Comparator.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Comparator.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Controller.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Controller.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Controller.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Controller.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Controller.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="InstructionMemory.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="InstructionMemory.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="InstructionMemory.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="InstructionMemory.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="InstructionMemory.xst"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Main.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Main.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Main.lso"/>
@@ -70,6 +85,11 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Main_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Main_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Main_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="OneBitRegister.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="OneBitRegister.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="OneBitRegister.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="OneBitRegister.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="OneBitRegister.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCALU.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="PCALU.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PCALU.stx"/>
@@ -92,6 +112,41 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorALUParam2.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorALUParam2.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorALUParam2.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorCMPParam.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorCMPParam.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorCMPParam.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorCMPParam.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorCMPParam.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorDataMemoryWriteData.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorDataMemoryWriteData.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorDataMemoryWriteData.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorDataMemoryWriteData.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorDataMemoryWriteData.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorImmediate.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorImmediate.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorImmediate.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorImmediate.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorImmediate.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorPCALUAdder.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorPCALUAdder.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorPCALUAdder.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorPCALUAdder.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorPCALUAdder.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorPCALUOp.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorPCALUOp.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorPCALUOp.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorPCALUOp.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorPCALUOp.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorPCBJ.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorPCBJ.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorPCBJ.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorPCBJ.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorPCBJ.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorSPInput.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorSPInput.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorSPInput.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorSPInput.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorSPInput.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SelectorShiftParam.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="SelectorShiftParam.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorShiftParam.stx"/>
@@ -108,6 +163,14 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SelectorWriteRegisterData.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorWriteRegisterData.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="SelectorWriteRegisterData.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SingleRegister.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SingleRegister.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SingleRegister.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SingleRegister.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SingleRegister.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Timer.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Timer.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Timer.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -153,7 +216,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1478789795" xil_pn:in_ck="108277032266333014" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6610322198483499749" xil_pn:start_ts="1478789787">
+    <transform xil_pn:end_ts="1478872301" xil_pn:in_ck="-4766456394438235441" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6610322198483499749" xil_pn:start_ts="1478872286">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -177,16 +240,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1478789874" xil_pn:in_ck="3448645596365777628" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4387085462043182293" xil_pn:start_ts="1478789869">
+    <transform xil_pn:end_ts="1478872543" xil_pn:in_ck="3448645596365777628" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4387085462043182293" xil_pn:start_ts="1478872532">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Main.bld"/>
       <outfile xil_pn:name="Main.ngd"/>
       <outfile xil_pn:name="Main_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1478789879" xil_pn:in_ck="3448647002774395869" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3188416950630775481" xil_pn:start_ts="1478789874">
+    <transform xil_pn:end_ts="1478872551" xil_pn:in_ck="3448647002774395869" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3188416950630775481" xil_pn:start_ts="1478872543">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -200,7 +265,7 @@
       <outfile xil_pn:name="Main_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1478789895" xil_pn:in_ck="4323994788891772534" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-1607638419597400795" xil_pn:start_ts="1478789879">
+    <transform xil_pn:end_ts="1478872579" xil_pn:in_ck="4323994788891772534" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-1607638419597400795" xil_pn:start_ts="1478872551">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -215,7 +280,7 @@
       <outfile xil_pn:name="Main_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1478789895" xil_pn:in_ck="3448461356836788057" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1478789892">
+    <transform xil_pn:end_ts="1478872579" xil_pn:in_ck="3448461356836788057" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1478872573">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Main.twr"/>

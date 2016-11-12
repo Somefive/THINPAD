@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.std_logic_signed.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -113,6 +114,18 @@ component ALU is
            Result : out  STD_LOGIC_VECTOR (15 downto 0));
 end component;
 
+component PCALU is
+    Port ( Adder : in  STD_LOGIC_VECTOR (15 downto 0);
+           PC : in  STD_LOGIC_VECTOR (15 downto 0);
+           Result : out  STD_LOGIC_VECTOR (15 downto 0));
+end component;
+
+component Comparator is
+    Port ( First : in  STD_LOGIC_VECTOR (15 downto 0);
+           Second : in  STD_LOGIC_VECTOR (15 downto 0);
+           Result : out  STD_LOGIC);
+end component;
+
 component SelectorALUParam1 is
     Port ( ReadRegisterData1 : in  STD_LOGIC_VECTOR (15 downto 0);
            SP : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -134,12 +147,128 @@ component SelectorShiftParam is
            Instruction4to2ShiftResult : out  STD_LOGIC_VECTOR (15 downto 0));
 end component;
 
+component SelectorImmediate is
+    Port ( Instruction7to0 : in  STD_LOGIC_VECTOR (7 downto 0);
+           Instruction3to0 : in  STD_LOGIC_VECTOR (3 downto 0);
+           selector : in  STD_LOGIC_VECTOR (1 downto 0);
+           SelectedImmediate : out  STD_LOGIC_VECTOR (15 downto 0));
+end component;
+
+component SelectorSPInput is
+    Port ( ReadRegisterData1 : in  STD_LOGIC_VECTOR (15 downto 0);
+           ALUResult : in  STD_LOGIC_VECTOR (15 downto 0);
+           selector : in  STD_LOGIC_VECTOR (1 downto 0);
+           SPInput : out  STD_LOGIC_VECTOR (15 downto 0));
+end component;
+
+component SelectorDataMemoryWriteData is
+    Port ( SignalOfReadRegisterData2 : in  STD_LOGIC_VECTOR (15 downto 0);
+           SignalOfReadRegisterData1 : in  STD_LOGIC_VECTOR (15 downto 0);
+           selector : in  STD_LOGIC_VECTOR (1 downto 0);
+           DataMemoryWriteData : out  STD_LOGIC_VECTOR (15 downto 0));
+end component;
+
+component SelectorCMPParam is
+    Port ( SignalOfReadRegisterData2 : in  STD_LOGIC_VECTOR (15 downto 0);
+           Instruction7to0 : in  STD_LOGIC_VECTOR (7 downto 0);
+           SelectorOfCMPParam : in  STD_LOGIC_VECTOR (1 downto 0);
+           ComparatorParam2 : out  STD_LOGIC_VECTOR (15 downto 0));
+end component;
+
+component SelectorPCBJ is
+    Port ( PCALUResult : in  STD_LOGIC_VECTOR (15 downto 0);
+           SignalOfReadRegisterData1 : in  STD_LOGIC_VECTOR (15 downto 0);
+           SelectorOfPCBJ : in  STD_LOGIC_VECTOR (1 downto 0);
+           PCInput : out  STD_LOGIC_VECTOR (15 downto 0));
+end component;
+
+component SelectorPCALUAdder is
+    Port ( Instruction7to0 : in  STD_LOGIC_VECTOR (7 downto 0);
+           Instruction10to0 : in  STD_LOGIC_VECTOR (10 downto 0);
+           SelectorOfPCALUAdder : in  STD_LOGIC_VECTOR (1 downto 0);
+           PCALUAdder : out  STD_LOGIC_VECTOR (15 downto 0));
+end component;
+
+component SingleRegister is
+    Port ( Input : in  STD_LOGIC_VECTOR (15 downto 0);
+           Output : out  STD_LOGIC_VECTOR (15 downto 0);
+           WriteEN : in  STD_LOGIC);
+end component;
+
+component OneBitRegister is
+    Port ( Input : in  STD_LOGIC;
+           Output : out  STD_LOGIC;
+           WriteEN : in  STD_LOGIC);
+end component;
+
+component SelectorPCALUOp is
+    Port ( TOutput : in  STD_LOGIC;
+           SignalOfReadRegisterData1 : in  STD_LOGIC_VECTOR (15 downto 0);
+           SelectorOfPCALUOp : in  STD_LOGIC_VECTOR (2 downto 0);
+           SelectorOfPCALUAdder : out  STD_LOGIC_VECTOR (1 downto 0));
+end component;
+
+component InstructionMemory is
+    Port ( ReadAddress : in STD_LOGIC_VECTOR (15 downto 0);
+	        Instruction : out STD_LOGIC_VECTOR (15 downto 0);
+           ADDR : out  STD_LOGIC_VECTOR (17 downto 0);
+           DATA : inout  STD_LOGIC_VECTOR (15 downto 0);
+           EN : out  STD_LOGIC;
+			  OE : out  STD_LOGIC;
+           WE : out  STD_LOGIC;
+           CLK : in  STD_LOGIC;
+           BOOT : in  STD_LOGIC;
+           MODE : in  STD_LOGIC_VECTOR (1 downto 0)); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
+end component;
+
+component DataMemory is
+    Port ( Address : in  STD_LOGIC_VECTOR (15 downto 0);
+           WriteData : in  STD_LOGIC_VECTOR (15 downto 0);
+           ReadData : out  STD_LOGIC_VECTOR (15 downto 0);
+           ADDR : out  STD_LOGIC_VECTOR (17 downto 0);
+           DATA : inout  STD_LOGIC_VECTOR (15 downto 0);
+           EN : out  STD_LOGIC;
+           OE : out  STD_LOGIC;
+           WE : out  STD_LOGIC;
+           CLK : in  STD_LOGIC;
+           MODE : in  STD_LOGIC_VECTOR (1 downto 0)); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
+end component;
+
+component Controller is
+    Port ( Instruction : in  STD_LOGIC_VECTOR (15 downto 0);
+           Period : in  STD_LOGIC_VECTOR (2 downto 0);
+           PCWriteEN : out  STD_LOGIC;
+           SPWriteEN : out  STD_LOGIC;
+           IHWriteEN : out  STD_LOGIC;
+           TWriteEN : out  STD_LOGIC;
+           RegisterHeapEN : out  STD_LOGIC;
+           InstructionMemoryMode : out  STD_LOGIC_VECTOR (1 downto 0);
+           DataMemoryMode : out  STD_LOGIC_VECTOR (1 downto 0);
+           ALUOperator : out  STD_LOGIC_VECTOR (3 downto 0);
+           SelectorOfWriteRegister : out  STD_LOGIC_VECTOR (1 downto 0);
+           SelectorOfWriteRegisterData : out  STD_LOGIC_VECTOR (2 downto 0);
+           SelectorOfALUParam1 : out  STD_LOGIC_VECTOR (1 downto 0);
+           SelectorOfALUParam2 : out  STD_LOGIC_VECTOR (1 downto 0);
+           SelectorOfImmediate : out  STD_LOGIC_VECTOR (1 downto 0);
+           SelectorOfSPInput : out  STD_LOGIC_VECTOR (1 downto 0);
+           SelectorOfDataMemoryWriteData : out  STD_LOGIC_VECTOR (1 downto 0);
+           SelectorOfCMPParam : out  STD_LOGIC_VECTOR (1 downto 0);
+           SelectorOfPCBJ : out  STD_LOGIC_VECTOR (1 downto 0);
+           SelectorOfPCALUOp : out  STD_LOGIC_VECTOR (2 downto 0));
+end component;
+
 -- Control Signals
 signal SelectorOfWriteRegister: STD_LOGIC_VECTOR (1 downto 0):="00";
 signal SelectorOfWriteRegisterData: STD_LOGIC_VECTOR (2 downto 0):="000";
 signal RegisterHeapEN: STD_LOGIC:='1';
 signal SelectorOfALUParam1: STD_LOGIC_VECTOR (1 downto 0):="00";
 signal SelectorOfALUParam2: STD_LOGIC_VECTOR (1 downto 0):="00";
+signal SelectorOfImmediate: STD_LOGIC_VECTOR (1 downto 0):="00";
+signal SelectorOfSPInput: STD_LOGIC_VECTOR (1 downto 0):="00";
+signal SelectorOfDataMemoryWriteData: STD_LOGIC_VECTOR (1 downto 0):="00";
+signal SelectorOfCMPParam: STD_LOGIC_VECTOR (1 downto 0):="00";
+signal SelectorOfPCBJ: STD_LOGIC_VECTOR (1 downto 0):="00";
+signal SelectorOfPCALUOp: STD_LOGIC_VECTOR (2 downto 0):="000";
 
 -- RegisterHeap Signals
 signal SignalOfWriteRegister: STD_LOGIC_VECTOR (2 downto 0);
@@ -153,32 +282,50 @@ signal ALUOperandA: STD_LOGIC_VECTOR (15 downto 0);
 signal ALUOperandB: STD_LOGIC_VECTOR (15 downto 0);
 signal ALUOperator: STD_LOGIC_VECTOR (3 downto 0);
 
+-- PCALU Signals
+signal PCALUAdder: STD_LOGIC_VECTOR (15 downto 0);
+signal PCALUResult: STD_LOGIC_VECTOR (15 downto 0);
+signal SelectorOfPCALUAdder: STD_LOGIC_VECTOR (1 downto 0);
+
 -- DataMemory Signals
 signal DataMemoryWriteData: STD_LOGIC_VECTOR (15 downto 0);
 signal DataMemoryReadData: STD_LOGIC_VECTOR (15 downto 0);
+signal DataMemoryMode: STD_LOGIC_VECTOR (1 downto 0);
 
 -- Single Registers
-signal PC: STD_LOGIC_VECTOR (15 downto 0);
-signal IH: STD_LOGIC_VECTOR (15 downto 0);
-signal SP: STD_LOGIC_VECTOR (15 downto 0);
+  -- SP
+  signal SPInput: STD_LOGIC_VECTOR (15 downto 0);
+  signal SPOutput: STD_LOGIC_VECTOR (15 downto 0);
+  signal SPWriteEN: STD_LOGIC;
+  -- IH
+  signal IHInput: STD_LOGIC_VECTOR (15 downto 0);
+  signal IHOutput: STD_LOGIC_VECTOR (15 downto 0);
+  signal IHWriteEN: STD_LOGIC;
+  -- T
+  signal TInput: STD_LOGIC;
+  signal TOutput: STD_LOGIC;
+  signal TWriteEN: STD_LOGIC;
+  -- PC
+  signal PCInput: STD_LOGIC_VECTOR (15 downto 0);
+  signal PCOutput: STD_LOGIC_VECTOR (15 downto 0);
+  signal PCWriteEN: STD_LOGIC;
 
 -- Between Selectors
 signal Instruction4to2ShiftResult: STD_LOGIC_VECTOR (15 downto 0);
 signal SelectedImmediate: STD_LOGIC_VECTOR (15 downto 0);
+signal ComparatorParam2: STD_LOGIC_VECTOR (15 downto 0);
 
-
+-- Instruction Memory
 signal Instruction: STD_LOGIC_VECTOR (15 downto 0);
+signal InstructionMemoryMode: STD_LOGIC_VECTOR (1 downto 0);
+signal InstructionMemoryBoot: STD_LOGIC;
 
-
-type PERIOD is(PERIOD_IF,PERIOD_ID,PERIOD_EXE,PERIOD_MEM,PERIOD_WB);
-signal STEP: PERIOD:=PERIOD_IF;
 signal STEP_NUMBER: INTEGER RANGE 0 TO 4;
-
+signal Period: STD_LOGIC_VECTOR (2 downto 0):="000";
 
 
 
 begin
-	STEP<=PERIOD_IF;
 	FLASH_A<="00000000000000000000000";
    FLASH_D<="0000000000000000";
 	VGA_B<="000";
@@ -187,10 +334,6 @@ begin
    VGA_HHYNC<='1';
    VGA_VHYNC<='1';
    PS2KB_CLOCK<='1';
-   RAM1DATA<="0000000000000000";
-   RAM2DATA<="0000000000000000";
-   RAM1ADDR<="000000000000000000";
-   RAM2ADDR<="000000000000000000";
    FLASH_BYTE<='1';
    FLASH_CE<='1';
    FLASH_CE1<='1';
@@ -202,12 +345,6 @@ begin
    FLASH_WE<='1';
    U_RXD<='1';
    U_TXD<='1';
-   RAM1_EN<='1';
-   RAM1_OE<='1';
-   RAM1_RW<='1';
-   RAM2_EN<='1';
-   RAM2_OE<='1';
-   RAM2_RW<='1';
    DYP1(6 downto 3)<="1111";
 	DYP1(0)<=PS2KB_DATA;
 	DYP1(1)<=CLK;
@@ -215,14 +352,9 @@ begin
 	FPGA_LED<=SW_DIP;
 	
 	-- Instruction Debug Mode
-	Instruction <= SW_DIP;
+	-- Instruction <= SW_DIP;
 	
-	with STEP select STEP_NUMBER <=
-		0 when PERIOD_IF,
-		1 when PERIOD_ID,
-		2 when PERIOD_EXE,
-		3 when PERIOD_MEM,
-		4 when PERIOD_WB;
+	STEP_NUMBER <= CONV_INTEGER(Period);
 	
    -- Modules
 	L1: DigitLights port map(DYP0,STEP_NUMBER);
@@ -235,6 +367,43 @@ begin
            SignalOfReadRegisterData1,
            SignalOfReadRegisterData2,
 			  RegisterHeapEN);
+   ALU_Entity: ALU port map (
+	        ALUOperandA,
+           ALUOperandB,
+           ALUOperator,
+           ALUResult);
+   PCALU_Entity: PCALU port map ( 
+	        PCALUAdder,
+           PCOutput,
+           PCALUResult);
+   Comparator_Entity: Comparator port map ( 
+	        SignalOfReadRegisterData1,
+           ComparatorParam2,
+           TInput);
+
+	InstructionMemory_Entity: InstructionMemory port map (
+	        PCOutput,
+	        Instruction,
+           RAM2ADDR,
+           RAM2DATA,
+           RAM2_EN,
+			  RAM2_OE,
+           RAM2_RW,
+           CLK,
+           InstructionMemoryBoot,
+           InstructionMemoryMode);
+	DataMemory_Entity: DataMemory port map ( 
+	        ALUResult,
+           DataMemoryWriteData,
+           DataMemoryReadData,
+           RAM1ADDR,
+           RAM1DATA,
+           RAM1_EN,
+           RAM1_OE,
+           RAM1_RW,
+           CLK,
+           DataMemoryMode);
+			  
    SelectorWriteRegister_Entity: SelectorWriteRegister port map (
            Instruction(10 downto 8),
            Instruction(7 downto 5),
@@ -242,22 +411,17 @@ begin
            SelectorOfWriteRegister,
            SignalOfWriteRegister);
 	SelectorWriteRegisterData_Entity: SelectorWriteRegisterData port map ( 
-	        PC,
+	        PCOutput,
            SignalOfReadRegisterData2,
            Instruction(7 downto 0),
            ALUResult,
            DataMemoryReadData,
-           IH,
+           IHOutput,
            SelectorOfWriteRegisterData,
 			  SignalOfWriteRegisterData);
-	ALU_Entity: ALU port map (
-	        ALUOperandA,
-           ALUOperandB,
-           ALUOperator,
-           ALUResult);
 	SelectorALUParam1_Entity: SelectorALUParam1 port map ( 
 	        SignalOfReadRegisterData1,
-           SP,
+           SPOutput,
            Instruction4to2ShiftResult,
            SelectorOfALUParam1,
            ALUOperandA);
@@ -270,5 +434,82 @@ begin
 	SelectorShiftParam_Entity: SelectorShiftParam port map ( 
 	        Instruction(4 downto 2),
            Instruction4to2ShiftResult);
+	SelectorImmediate_Entity: SelectorImmediate port map ( 
+	        Instruction(7 downto 0),
+           Instruction(3 downto 0),
+           SelectorOfImmediate,
+           SelectedImmediate);
+	SelectorSPInput_Entity: SelectorSPInput port map (
+ 	        SignalOfReadRegisterData1,
+           ALUResult,
+           SelectorOfSPInput,
+           SPInput);
+	SelectorDataMemoryWriteData_Entity: SelectorDataMemoryWriteData port map ( 
+	        SignalOfReadRegisterData2,
+           SignalOfReadRegisterData1,
+           SelectorOfDataMemoryWriteData,
+           DataMemoryWriteData);
+	SelectorCMPParam_Entity: SelectorCMPParam port map (
+           SignalOfReadRegisterData2,
+           Instruction(7 downto 0),
+           SelectorOfCMPParam,
+           ComparatorParam2);
+	SelectorPCBJ_Entity: SelectorPCBJ port map ( 
+	        PCALUResult,
+           SignalOfReadRegisterData1,
+           SelectorOfPCBJ,
+           PCInput);
+	SelectorPCALUAdder_Entity: SelectorPCALUAdder port map (
+           Instruction(7 downto 0),
+           Instruction(10 downto 0),
+           SelectorOfPCALUAdder,
+           PCALUAdder);
+   SelectorPCALUOp_Entity: SelectorPCALUOp port map (
+ 	        TOutput,
+           SignalOfReadRegisterData1,
+           SelectorOfPCALUOp,
+           SelectorOfPCALUAdder);
+			  
+	-- Single Registers
+	SPRegister: SingleRegister port map (
+	        SPInput,
+           SPOutput,
+           SPWriteEN);
+   IHRegister: SingleRegister port map (
+	        IHInput,
+           IHOutput,
+           IHWriteEN);
+	IHInput <= SignalOfReadRegisterData1;
+	PCRegister: SingleRegister port map (
+	        PCInput,
+           PCOutput,
+           PCWriteEN);
+	TRegister: OneBitRegister port map ( 
+	        TInput,
+           TOutput,
+           TWriteEN);
+			
+	-- Controller
+	Controller_Entity: Controller port map ( 
+	        Instruction,
+           Period,
+           PCWriteEN,
+           SPWriteEN,
+           IHWriteEN,
+           TWriteEN,
+           RegisterHeapEN,
+           InstructionMemoryMode,
+           DataMemoryMode,
+           ALUOperator,
+           SelectorOfWriteRegister,
+           SelectorOfWriteRegisterData,
+           SelectorOfALUParam1,
+           SelectorOfALUParam2,
+           SelectorOfImmediate,
+           SelectorOfSPInput,
+           SelectorOfDataMemoryWriteData,
+           SelectorOfCMPParam,
+           SelectorOfPCBJ,
+           SelectorOfPCALUOp);			
 end Behavioral;
 

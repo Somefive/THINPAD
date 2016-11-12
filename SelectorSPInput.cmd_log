@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SelectorSPInput.vhd -prj THINPAD -o SelectorSPInput.spl -module SelectorSPInput -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorSPInput.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorSPInput.sym 

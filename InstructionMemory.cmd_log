@@ -1,0 +1,2 @@
+vhdtdtfi -lib work InstructionMemory.vhd -prj THINPAD -o InstructionMemory.spl -module InstructionMemory -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e InstructionMemory.spl D:/Study/THU/2016Autumn/CPU/THINPAD/InstructionMemory.sym 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Controller">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-11-11T13:39:38</timestamp>
+    <pin polarity="Input" x="0" y="-1184" name="Instruction(15:0)" />
+    <pin polarity="Input" x="0" y="-32" name="Period(2:0)" />
+    <pin polarity="Output" x="688" y="-1184" name="PCWriteEN" />
+    <pin polarity="Output" x="688" y="-1120" name="SPWriteEN" />
+    <pin polarity="Output" x="688" y="-1056" name="IHWriteEN" />
+    <pin polarity="Output" x="688" y="-992" name="TWriteEN" />
+    <pin polarity="Output" x="688" y="-928" name="RegisterHeapEN" />
+    <pin polarity="Output" x="688" y="-864" name="InstructionMemoryMode(1:0)" />
+    <pin polarity="Output" x="688" y="-800" name="DataMemoryMode(1:0)" />
+    <pin polarity="Output" x="688" y="-736" name="ALUOperator(3:0)" />
+    <pin polarity="Output" x="688" y="-672" name="SelectorOfWriteRegister(1:0)" />
+    <pin polarity="Output" x="688" y="-608" name="SelectorOfWriteRegisterData(2:0)" />
+    <pin polarity="Output" x="688" y="-544" name="SelectorOfALUParam1(1:0)" />
+    <pin polarity="Output" x="688" y="-480" name="SelectorOfALUParam2(1:0)" />
+    <pin polarity="Output" x="688" y="-416" name="SelectorOfImmediate(1:0)" />
+    <pin polarity="Output" x="688" y="-352" name="SelectorOfSPInput(1:0)" />
+    <pin polarity="Output" x="688" y="-288" name="SelectorOfDataMemoryWriteData(1:0)" />
+    <pin polarity="Output" x="688" y="-224" name="SelectorOfCMPParam(1:0)" />
+    <pin polarity="Output" x="688" y="-160" name="SelectorOfPCBJ(1:0)" />
+    <pin polarity="Output" x="688" y="-96" name="SelectorOfPCALUAdder(1:0)" />
+    <pin polarity="Output" x="688" y="-32" name="SelectorOfPCALUOp(2:0)" />
+    <graph>
+        <rect width="560" x="64" y="-1216" height="1216" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="344" y="-1224" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1184" type="pin Instruction(15:0)" />
+        <rect width="64" x="0" y="-1196" height="24" />
+        <line x2="0" y1="-1184" y2="-1184" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin Period(2:0)" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-1184" type="pin PCWriteEN" />
+        <line x2="688" y1="-1184" y2="-1184" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-1120" type="pin SPWriteEN" />
+        <line x2="688" y1="-1120" y2="-1120" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-1056" type="pin IHWriteEN" />
+        <line x2="688" y1="-1056" y2="-1056" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-992" type="pin TWriteEN" />
+        <line x2="688" y1="-992" y2="-992" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-928" type="pin RegisterHeapEN" />
+        <line x2="688" y1="-928" y2="-928" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-864" type="pin InstructionMemoryMode(1:0)" />
+        <rect width="64" x="624" y="-876" height="24" />
+        <line x2="688" y1="-864" y2="-864" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-800" type="pin DataMemoryMode(1:0)" />
+        <rect width="64" x="624" y="-812" height="24" />
+        <line x2="688" y1="-800" y2="-800" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-736" type="pin ALUOperator(3:0)" />
+        <rect width="64" x="624" y="-748" height="24" />
+        <line x2="688" y1="-736" y2="-736" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-672" type="pin SelectorOfWriteRegister(1:0)" />
+        <rect width="64" x="624" y="-684" height="24" />
+        <line x2="688" y1="-672" y2="-672" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-608" type="pin SelectorOfWriteRegisterData(2:0)" />
+        <rect width="64" x="624" y="-620" height="24" />
+        <line x2="688" y1="-608" y2="-608" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-544" type="pin SelectorOfALUParam1(1:0)" />
+        <rect width="64" x="624" y="-556" height="24" />
+        <line x2="688" y1="-544" y2="-544" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-480" type="pin SelectorOfALUParam2(1:0)" />
+        <rect width="64" x="624" y="-492" height="24" />
+        <line x2="688" y1="-480" y2="-480" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-416" type="pin SelectorOfImmediate(1:0)" />
+        <rect width="64" x="624" y="-428" height="24" />
+        <line x2="688" y1="-416" y2="-416" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-352" type="pin SelectorOfSPInput(1:0)" />
+        <rect width="64" x="624" y="-364" height="24" />
+        <line x2="688" y1="-352" y2="-352" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-288" type="pin SelectorOfDataMemoryWriteData(1:0)" />
+        <rect width="64" x="624" y="-300" height="24" />
+        <line x2="688" y1="-288" y2="-288" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-224" type="pin SelectorOfCMPParam(1:0)" />
+        <rect width="64" x="624" y="-236" height="24" />
+        <line x2="688" y1="-224" y2="-224" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-160" type="pin SelectorOfPCBJ(1:0)" />
+        <rect width="64" x="624" y="-172" height="24" />
+        <line x2="688" y1="-160" y2="-160" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-96" type="pin SelectorOfPCALUAdder(1:0)" />
+        <rect width="64" x="624" y="-108" height="24" />
+        <line x2="688" y1="-96" y2="-96" x1="624" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="616" y="-32" type="pin SelectorOfPCALUOp(2:0)" />
+        <rect width="64" x="624" y="-44" height="24" />
+        <line x2="688" y1="-32" y2="-32" x1="624" />
+    </graph>
+</symbol>

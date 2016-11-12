@@ -39,6 +39,38 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock CLK_FROM_KEY to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+RAM2ADDR<0> |    8.942(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2ADDR<1> |    8.691(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<0> |    7.571(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<1> |    8.253(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<2> |    8.180(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<3> |    8.246(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<4> |    7.292(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<5> |    8.106(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<6> |    8.538(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<7> |    7.314(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<8> |    8.122(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<9> |    8.842(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<10>|    7.848(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<11>|    7.287(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<12>|    8.202(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2DATA<15>|    8.102(R)|CLK_FROM_KEY_IBUF |   0.000|
+RAM2_RW     |    9.507(R)|CLK_FROM_KEY_IBUF |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK_FROM_KEY
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_FROM_KEY   |    3.654|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
@@ -60,12 +92,12 @@ SW_DIP<10>     |FPGA_LED<10>   |   10.550|
 SW_DIP<11>     |FPGA_LED<11>   |   11.569|
 SW_DIP<12>     |FPGA_LED<12>   |    8.949|
 SW_DIP<13>     |FPGA_LED<13>   |    9.219|
-SW_DIP<14>     |FPGA_LED<14>   |   10.737|
-SW_DIP<15>     |FPGA_LED<15>   |    9.054|
+SW_DIP<14>     |FPGA_LED<14>   |   10.733|
+SW_DIP<15>     |FPGA_LED<15>   |    9.610|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Nov 10 22:58:14 2016 
+Analysis completed Fri Nov 11 21:56:17 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:

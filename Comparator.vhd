@@ -43,9 +43,9 @@ begin
 	process(First,Second)
 	begin
 		if(First=Second)then
-			Result<='1';
-		else
 			Result<='0';
+		else
+			Result<='1';
 		end if;
 	end process;
 end Behavioral;

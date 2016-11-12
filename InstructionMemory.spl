@@ -1,0 +1,13 @@
+[Inputs]
+CLK
+BOOT
+=ReadAddress[15:0]=
+=MODE[2:0]=
+[Outputs]
+OE
+WE
+EN
+=Instruction[15:0]=
+=Address[17:0]=
+[BiDir]
+=Data[15:0]=

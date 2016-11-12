@@ -1,0 +1,7 @@
+[Inputs]
+=PCALUResult[15:0]=
+=SignalOfReadRegisterData1[15:0]=
+=SelectorOfPCBJ[1:0]=
+[Outputs]
+=PCInput[15:0]=
+[BiDir]

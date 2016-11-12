@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="SelectorCMPParam">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-11-11T7:48:14</timestamp>
+    <pin polarity="Input" x="0" y="-160" name="SignalOfReadRegisterData2(15:0)" />
+    <pin polarity="Input" x="0" y="-96" name="Instruction7to0(7:0)" />
+    <pin polarity="Input" x="0" y="-32" name="SelectorOfCMPParam(1:0)" />
+    <pin polarity="Output" x="736" y="-160" name="ComparatorParam2(15:0)" />
+    <graph>
+        <rect width="608" x="64" y="-192" height="192" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="368" y="-200" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin SignalOfReadRegisterData2(15:0)" />
+        <rect width="64" x="0" y="-172" height="24" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin Instruction7to0(7:0)" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin SelectorOfCMPParam(1:0)" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="664" y="-160" type="pin ComparatorParam2(15:0)" />
+        <rect width="64" x="672" y="-172" height="24" />
+        <line x2="736" y1="-160" y2="-160" x1="672" />
+    </graph>
+</symbol>

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SelectorCMPParam.vhd -prj THINPAD -o SelectorCMPParam.spl -module SelectorCMPParam -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorCMPParam.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorCMPParam.sym 

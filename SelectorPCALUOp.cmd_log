@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SelectorPCALUOp.vhd -prj THINPAD -o SelectorPCALUOp.spl -module SelectorPCALUOp -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorPCALUOp.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCALUOp.sym 

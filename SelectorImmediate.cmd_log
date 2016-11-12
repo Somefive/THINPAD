@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SelectorImmediate.vhd -prj THINPAD -o SelectorImmediate.spl -module SelectorImmediate -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorImmediate.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorImmediate.sym 

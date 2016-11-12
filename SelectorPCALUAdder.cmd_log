@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SelectorPCALUAdder.vhd -prj THINPAD -o SelectorPCALUAdder.spl -module SelectorPCALUAdder -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SelectorPCALUAdder.spl D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCALUAdder.sym 

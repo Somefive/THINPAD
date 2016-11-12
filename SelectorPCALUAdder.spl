@@ -1,0 +1,7 @@
+[Inputs]
+=Instruction7to0[7:0]=
+=Instruction10to0[10:0]=
+=SelectorOfPCALUAdder[1:0]=
+[Outputs]
+=PCALUAdder[15:0]=
+[BiDir]

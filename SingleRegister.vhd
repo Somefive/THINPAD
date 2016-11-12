@@ -39,7 +39,7 @@ architecture Behavioral of SingleRegister is
 begin
 	process(WriteEN)
 	begin
-		if(WriteEN='1')then
+		if(WriteEN'event and WriteEN='1')then
 			Output <= Input;
 		end if;
 	end process;

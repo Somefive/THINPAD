@@ -52,7 +52,7 @@ begin
 	process(CLK,BOOT,MODE)
 	begin
 		if(CLK'event and CLK='1')then
-			if(BOOT='0')then
+			if(BOOT='0' and RUNNABLE='1')then
 				case step is
 					when 0=>
 						OE<='1';

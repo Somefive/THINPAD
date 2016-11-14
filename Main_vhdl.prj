@@ -1,3 +1,4 @@
 vhdl work "D:\Study\THU\2016Autumn\CPU\THINPAD\Timer.vhd"
+vhdl work "D:\Study\THU\2016Autumn\CPU\THINPAD\InstructionMemory.vhd"
 vhdl work "D:\Study\THU\2016Autumn\CPU\THINPAD\DigitLights.vhd"
 vhdl work "D:\Study\THU\2016Autumn\CPU\THINPAD\Main.vhd"

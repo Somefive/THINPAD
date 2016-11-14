@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Main.prj
 
@@ -108,6 +108,8 @@ Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd" in Library w
 Architecture behavioral of Entity timer is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd" in Library work.
 Architecture behavioral of Entity digitlights is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/InstructionMemory.vhd" in Library work.
+Architecture behavioral of Entity instructionmemory is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd" in Library work.
 Entity <main> compiled.
 Entity <main> (Architecture <behavioral>) compiled.
@@ -120,6 +122,8 @@ Analyzing hierarchy for entity <Main> in library <work> (architecture <behaviora
 Analyzing hierarchy for entity <Timer> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <DigitLights> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <InstructionMemory> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
@@ -134,6 +138,9 @@ Entity <Timer> analyzed. Unit <Timer> generated.
 Analyzing Entity <DigitLights> in library <work> (Architecture <behavioral>).
 INFO:Xst:1561 - "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd" line 57: Mux is complete : default of case is discarded
 Entity <DigitLights> analyzed. Unit <DigitLights> generated.
+
+Analyzing Entity <InstructionMemory> in library <work> (Architecture <behavioral>).
+Entity <InstructionMemory> analyzed. Unit <InstructionMemory> generated.
 
 
 =========================================================================
@@ -162,11 +169,41 @@ Synthesizing Unit <DigitLights>.
 Unit <DigitLights> synthesized.
 
 
+Synthesizing Unit <InstructionMemory>.
+    Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/InstructionMemory.vhd".
+WARNING:Xst:1780 - Signal <Writing> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <step>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 9                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | step$and0000              (positive)           |
+    | Power Up State     | 000000                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 18-bit register for signal <ADDR>.
+    Found 1-bit register for signal <OE>.
+    Found 16-bit register for signal <Instruction>.
+    Found 1-bit register for signal <WE>.
+    Found 16-bit tristate buffer for signal <DATA>.
+    Found 16-bit register for signal <Mtridata_DATA> created at line 61.
+    Found 1-bit register for signal <Mtrien_DATA> created at line 61.
+    Found 1-bit register for signal <Reading>.
+    Found 1-bit register for signal <RUNNABLE>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  55 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <InstructionMemory> synthesized.
+
+
 Synthesizing Unit <Main>.
     Related source file is "D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd".
 WARNING:Xst:647 - Input <RESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <PS2KB_DATA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <SW_DIP> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <DATA_READY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <CLK0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <CLK1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -175,7 +212,10 @@ WARNING:Xst:647 - Input <TSRE> is never used. This port will be preserved and le
 WARNING:Xst:653 - Signal <state> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
 WARNING:Xst:1780 - Signal <WriteData> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <ReadData> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <MODE> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <MODE> is used but never assigned. This sourceless signal will be automatically connected to value 01.
+WARNING:Xst:646 - Signal <CLK_MINOR> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CLK_MAJOR> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <BOOT> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:1780 - Signal <Address> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <Main> synthesized.
 
@@ -188,9 +228,13 @@ Macro Statistics
  16x7-bit ROM                                          : 1
 # Adders/Subtractors                                   : 1
  7-bit adder                                           : 1
-# Registers                                            : 3
- 1-bit register                                        : 2
+# Registers                                            : 11
+ 1-bit register                                        : 7
+ 16-bit register                                       : 2
+ 18-bit register                                       : 1
  7-bit register                                        : 1
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
 
 =========================================================================
 
@@ -198,27 +242,68 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <IM/step/FSM> on signal <step[1:8]> with one-hot encoding.
+--------------------
+ State  | Encoding
+--------------------
+ 000000 | 00000001
+ 000001 | 00000010
+ 000010 | 00000100
+ 000011 | 00001000
+ 000100 | 00010000
+ 000101 | 00100000
+ 000110 | 01000000
+ 000111 | 10000000
+--------------------
+WARNING:Xst:1290 - Hierarchical block <TIMER_ENTITY> is unconnected in block <Main>.
+   It will be removed from the design.
+WARNING:Xst:1426 - The value init of the FF/Latch RUNNABLE hinder the constant cleaning in the block IM.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch FFd8 hinder the constant cleaning in the block FSM.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <ADDR_16> (without init value) has a constant value of 0 in block <IM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDR_17> (without init value) has a constant value of 0 in block <IM>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# FSMs                                                 : 1
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
 # Adders/Subtractors                                   : 1
  7-bit adder                                           : 1
-# Registers                                            : 9
- Flip-Flops                                            : 9
+# Registers                                            : 64
+ Flip-Flops                                            : 64
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch FSM_FFd8 hinder the constant cleaning in the block FSM_0-parent.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch RUNNABLE hinder the constant cleaning in the block InstructionMemory.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <ADDR_16> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR_17> (without init value) has a constant value of 0 in block <InstructionMemory>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Main> ...
+WARNING:Xst:1710 - FF/Latch <IM/Mtridata_DATA_14> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IM/Mtridata_DATA_13> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit Main Conflict on KEEP property on signal IM/Mtridata_DATA<14> and IM/Mtridata_DATA<13> IM/Mtridata_DATA<13> signal will be lost.
 
 Optimizing unit <Timer> ...
+WARNING:Xst:2677 - Node <TIMER_ENTITY/CLK_MINOR_CURRENT> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <TIMER_ENTITY/CLK_MAJOR_CURRENT> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <TIMER_ENTITY/count_6> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <TIMER_ENTITY/count_5> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <TIMER_ENTITY/count_4> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <TIMER_ENTITY/count_3> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <TIMER_ENTITY/count_2> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <TIMER_ENTITY/count_1> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <TIMER_ENTITY/count_0> of sequential type is unconnected in block <Main>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -230,8 +315,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 9
- Flip-Flops                                            : 9
+# Registers                                            : 59
+ Flip-Flops                                            : 59
 
 =========================================================================
 
@@ -260,25 +345,25 @@ Design Statistics
 # IOs                              : 192
 
 Cell Usage :
-# BELS                             : 21
+# BELS                             : 51
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 2
+#      INV                         : 2
+#      LUT2                        : 6
+#      LUT2_D                      : 1
 #      LUT2_L                      : 2
-#      LUT3                        : 1
-#      LUT3_D                      : 2
-#      LUT4                        : 7
-#      LUT4_D                      : 3
-#      LUT4_L                      : 1
+#      LUT3                        : 9
+#      LUT4                        : 25
+#      LUT4_D                      : 1
+#      LUT4_L                      : 3
 #      VCC                         : 1
-# FlipFlops/Latches                : 9
-#      FD                          : 7
-#      FDE                         : 1
-#      FDR                         : 1
+# FlipFlops/Latches                : 59
+#      FDE                         : 59
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 168
-#      OBUF                        : 168
+# IO Buffers                       : 184
+#      IBUF                        : 16
+#      IOBUF                       : 16
+#      OBUF                        : 152
 =========================================================================
 
 Device utilization summary:
@@ -286,11 +371,12 @@ Device utilization summary:
 
 Selected Device : 3s1200efg320-4 
 
- Number of Slices:                        9  out of   8672     0%  
- Number of Slice Flip Flops:              9  out of  17344     0%  
- Number of 4 input LUTs:                 19  out of  17344     0%  
+ Number of Slices:                       29  out of   8672     0%  
+ Number of Slice Flip Flops:             43  out of  17344     0%  
+ Number of 4 input LUTs:                 49  out of  17344     0%  
  Number of IOs:                         192
- Number of bonded IOBs:                 169  out of    250    67%  
+ Number of bonded IOBs:                 185  out of    250    74%  
+    IOB Flip Flops:                      16
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -314,7 +400,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK_FROM_KEY                       | BUFGP                  | 9     |
+CLK_FROM_KEY                       | BUFGP                  | 59    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -325,9 +411,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 4.787ns (Maximum Frequency: 208.899MHz)
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 4.310ns
+   Minimum period: 5.028ns (Maximum Frequency: 198.886MHz)
+   Minimum input arrival time before clock: 3.804ns
+   Maximum output required time after clock: 4.914ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -336,58 +422,79 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_FROM_KEY'
-  Clock period: 4.787ns (frequency: 208.899MHz)
-  Total number of paths / destination ports: 87 / 10
+  Clock period: 5.028ns (frequency: 198.886MHz)
+  Total number of paths / destination ports: 341 / 100
 -------------------------------------------------------------------------
-Delay:               4.787ns (Levels of Logic = 3)
-  Source:            TIMER_ENTITY/count_6 (FF)
-  Destination:       TIMER_ENTITY/count_6 (FF)
+Delay:               5.028ns (Levels of Logic = 3)
+  Source:            IM/step_FSM_FFd3 (FF)
+  Destination:       IM/ADDR_1 (FF)
   Source Clock:      CLK_FROM_KEY rising
   Destination Clock: CLK_FROM_KEY rising
 
-  Data Path: TIMER_ENTITY/count_6 to TIMER_ENTITY/count_6
+  Data Path: IM/step_FSM_FFd3 to IM/ADDR_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               3   0.591   0.706  TIMER_ENTITY/count_6 (TIMER_ENTITY/count_6)
-     LUT4_D:I0->O          3   0.704   0.535  TIMER_ENTITY/CLK_MAJOR_CURRENT_cmp_eq000011 (TIMER_ENTITY/count_and0000)
-     LUT4_D:I3->O          3   0.704   0.535  TIMER_ENTITY/count_mux0002<4>11 (TIMER_ENTITY/N01)
-     LUT4:I3->O            1   0.704   0.000  TIMER_ENTITY/count_mux0002<1>1 (TIMER_ENTITY/count_mux0002<1>)
-     FD:D                      0.308          TIMER_ENTITY/count_5
+     FDE:C->Q              6   0.591   0.844  IM/step_FSM_FFd3 (IM/step_FSM_FFd3)
+     LUT2_L:I0->LO         1   0.704   0.104  IM/ADDR_mux0000<0>1_SW0 (N9)
+     LUT4:I3->O           16   0.704   1.069  IM/ADDR_mux0000<0>1 (N0)
+     LUT3:I2->O            1   0.704   0.000  IM/ADDR_mux0000<1> (IM/ADDR_mux0000<1>)
+     FDE:D                     0.308          IM/ADDR_1
     ----------------------------------------
-    Total                      4.787ns (3.011ns logic, 1.776ns route)
-                                       (62.9% logic, 37.1% route)
+    Total                      5.028ns (3.011ns logic, 2.017ns route)
+                                       (59.9% logic, 40.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_FROM_KEY'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.804ns (Levels of Logic = 3)
+  Source:            SW_DIP<1> (PAD)
+  Destination:       IM/ADDR_1 (FF)
+  Destination Clock: CLK_FROM_KEY rising
+
+  Data Path: SW_DIP<1> to IM/ADDR_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  SW_DIP_1_IBUF (SW_DIP_1_IBUF)
+     LUT4_L:I0->LO         1   0.704   0.275  IM/ADDR_mux0000<1>_SW0 (N11)
+     LUT3:I0->O            1   0.704   0.000  IM/ADDR_mux0000<1> (IM/ADDR_mux0000<1>)
+     FDE:D                     0.308          IM/ADDR_1
+    ----------------------------------------
+    Total                      3.804ns (2.934ns logic, 0.870ns route)
+                                       (77.1% logic, 22.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_FROM_KEY'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 64 / 50
 -------------------------------------------------------------------------
-Offset:              4.310ns (Levels of Logic = 1)
-  Source:            TIMER_ENTITY/CLK_MINOR_CURRENT (FF)
-  Destination:       FPGA_LED<1> (PAD)
+Offset:              4.914ns (Levels of Logic = 1)
+  Source:            IM/Mtrien_DATA (FF)
+  Destination:       RAM2DATA<15> (PAD)
   Source Clock:      CLK_FROM_KEY rising
 
-  Data Path: TIMER_ENTITY/CLK_MINOR_CURRENT to FPGA_LED<1>
+  Data Path: IM/Mtrien_DATA to RAM2DATA<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.591   0.447  TIMER_ENTITY/CLK_MINOR_CURRENT (TIMER_ENTITY/CLK_MINOR_CURRENT)
-     OBUF:I->O                 3.272          FPGA_LED_1_OBUF (FPGA_LED<1>)
+     FDE:C->Q             17   0.591   1.051  IM/Mtrien_DATA (IM/Mtrien_DATA)
+     IOBUF:T->IO               3.272          RAM2DATA_15_IOBUF (RAM2DATA<15>)
     ----------------------------------------
-    Total                      4.310ns (3.863ns logic, 0.447ns route)
-                                       (89.6% logic, 10.4% route)
+    Total                      4.914ns (3.863ns logic, 1.051ns route)
+                                       (78.6% logic, 21.4% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.90 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.46 secs
  
 --> 
 
-Total memory usage is 307808 kilobytes
+Total memory usage is 307764 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   13 (   0 filtered)
+Number of warnings :   37 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

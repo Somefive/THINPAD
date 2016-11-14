@@ -145,13 +145,28 @@ component DataMemory is
            MODE : in  STD_LOGIC_VECTOR (1 downto 0)); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
 end component;
 
+component InstructionMemory is
+    Port ( ReadAddress : in STD_LOGIC_VECTOR (15 downto 0);
+	        Instruction : out STD_LOGIC_VECTOR (15 downto 0);
+           ADDR : out  STD_LOGIC_VECTOR (17 downto 0);
+           DATA : inout  STD_LOGIC_VECTOR (15 downto 0);
+           EN : out  STD_LOGIC;
+			  OE : out  STD_LOGIC;
+           WE : out  STD_LOGIC;
+           CLK : in  STD_LOGIC;
+           BOOT : in  STD_LOGIC;
+           MODE : in  STD_LOGIC_VECTOR (1 downto 0)); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
+end component;
+
 signal CLK_MAJOR: STD_LOGIC;
 signal CLK_MINOR: STD_LOGIC;
 
 signal Address : STD_LOGIC_VECTOR (15 downto 0):="0000000000000000";
 signal WriteData : STD_LOGIC_VECTOR (15 downto 0):="0000000000000000";
 signal ReadData : STD_LOGIC_VECTOR (15 downto 0):="0000000000000000";
-signal MODE : STD_LOGIC_VECTOR (1 downto 0):="00";
+signal MODE : STD_LOGIC_VECTOR (1 downto 0):="01";
+
+signal BOOT: STD_LOGIC:='0';
 
 --Count
 signal state :  INTEGER RANGE 0 TO 63:=0;
@@ -159,11 +174,10 @@ signal state :  INTEGER RANGE 0 TO 63:=0;
 begin
 	TIMER_ENTITY: Timer port map (CLK_FROM_KEY,CLK_MAJOR,CLK_MINOR);
 	DL: DigitLights port map (DYP0,state);
+	IM: InstructionMemory port map (SW_DIP,FPGA_LED,RAM2ADDR,RAM2DATA,RAM2_EN,RAM2_OE,RAM2_RW,CLK_FROM_KEY,BOOT,MODE);
 	--DM: DataMemory port map (Address, WriteData, FPGA_LED, RAM1ADDR, RAM1DATA, RAM1_EN, RAM1_OE, RAM1_RW, DATA_READY, RDN, TBRE, TSRE, WRN, CLK_CPU, MODE);
 	
-	FPGA_LED(0)<=CLK_MAJOR;
-	FPGA_LED(1)<=CLK_MINOR;
-	FPGA_LED(15 downto 2)<="00000000000000";
+	
 	
 	
 	
@@ -176,9 +190,9 @@ begin
 	VGA_VHYNC <= '1';
 	PS2KB_CLOCK <= '1';
 	RAM1DATA <= "0000000000000000";
-	RAM2DATA <= "0000000000000000";
+	--RAM2DATA <= "0000000000000000";
 	RAM1ADDR <= "000000000000000000";
-	RAM2ADDR <= "000000000000000000";
+	--RAM2ADDR <= "000000000000000000";
 	FLASH_BYTE <= '1';
 	FLASH_CE <= '1';
 	FLASH_CE1 <= '1';
@@ -193,9 +207,9 @@ begin
 	RAM1_EN <= '1';
 	RAM1_OE <= '1';
 	RAM1_RW <= '1';
-	RAM2_EN <= '1';
-	RAM2_OE <= '1';
-	RAM2_RW <= '1';
+	--RAM2_EN <= '1';
+	--RAM2_OE <= '1';
+	--RAM2_RW <= '1';
 	--FPGA_LED <= "0000000000000000";
 	--DYP0 <= "0000000";
 	DYP1 <= "0000000";

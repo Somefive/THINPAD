@@ -54,7 +54,7 @@ begin
 			when "0101" => Result <= to_stdlogicvector(to_bitvector(OperandB) sll conv_integer(OperandA));
 			when "0110" => Result <= to_stdlogicvector(to_bitvector(OperandB) sra conv_integer(OperandA));
 			when "0111" => Result <= "0000000000000000"-OperandB;
-			when others => Result <= "0000000000000000";
+			when others =>
 		end case;
 	end if;
 	end process;

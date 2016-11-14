@@ -55,7 +55,7 @@ end Controller;
 
 architecture Behavioral of Controller is
 
-shared variable Period: INTEGER RANGE 0 TO 15: 0;
+shared variable Period: INTEGER RANGE 0 TO 15:=0;
 signal CLK_MAJOR: STD_LOGIC:='0';
 
 begin

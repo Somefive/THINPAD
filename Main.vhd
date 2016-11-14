@@ -172,12 +172,38 @@ signal BOOT: STD_LOGIC:='0';
 signal state :  INTEGER RANGE 0 TO 63:=0;
 
 begin
-	TIMER_ENTITY: Timer port map (CLK_FROM_KEY,CLK_MAJOR,CLK_MINOR);
+	TIMER_ENTITY: Timer port map (CLK1,CLK_MAJOR,CLK_MINOR);
 	DL: DigitLights port map (DYP0,state);
-	IM: InstructionMemory port map (SW_DIP,FPGA_LED,RAM2ADDR,RAM2DATA,RAM2_EN,RAM2_OE,RAM2_RW,CLK_FROM_KEY,BOOT,MODE);
-	--DM: DataMemory port map (Address, WriteData, FPGA_LED, RAM1ADDR, RAM1DATA, RAM1_EN, RAM1_OE, RAM1_RW, DATA_READY, RDN, TBRE, TSRE, WRN, CLK_CPU, MODE);
+	--IM: InstructionMemory port map (SW_DIP,FPGA_LED,RAM2ADDR,RAM2DATA,RAM2_EN,RAM2_OE,RAM2_RW,CLK_FROM_KEY,BOOT,MODE);
+	DM: DataMemory port map (Address, WriteData, FPGA_LED, RAM1ADDR, RAM1DATA, RAM1_EN, RAM1_OE, RAM1_RW, DATA_READY, RDN, TBRE, TSRE, WRN, CLK_MINOR, MODE);
 	
-	
+	process(CLK_FROM_KEY)
+	begin
+		if(CLK_FROM_KEY'event and CLK_FROM_KEY='1')then
+			case state is
+				when 0=>
+					MODE<="11";
+					Address<=SW_DIP;
+					state<=1;
+				when 1=>
+					WriteData<=SW_DIP;
+					state<=2;
+				when 2=>
+					MODE<="10";
+					state<=3;
+				when 3=>
+					MODE<="11";
+					Address<=SW_DIP;
+					state<=4;
+				when 4=>
+					MODE<="01";
+					state<=5;
+				when others=>
+					MODE<="11";
+					state<=0;
+			end case;
+		end if;
+	end process;
 	
 	
 	
@@ -189,10 +215,10 @@ begin
 	VGA_HHYNC <= '1';
 	VGA_VHYNC <= '1';
 	PS2KB_CLOCK <= '1';
-	RAM1DATA <= "0000000000000000";
-	--RAM2DATA <= "0000000000000000";
-	RAM1ADDR <= "000000000000000000";
-	--RAM2ADDR <= "000000000000000000";
+	--RAM1DATA <= "0000000000000000";
+	RAM2DATA <= "0000000000000000";
+	--RAM1ADDR <= "000000000000000000";
+	RAM2ADDR <= "000000000000000000";
 	FLASH_BYTE <= '1';
 	FLASH_CE <= '1';
 	FLASH_CE1 <= '1';
@@ -204,17 +230,17 @@ begin
 	FLASH_WE <= '1';
 	U_RXD <= '1';
 	U_TXD <= '1';
-	RAM1_EN <= '1';
-	RAM1_OE <= '1';
-	RAM1_RW <= '1';
-	--RAM2_EN <= '1';
-	--RAM2_OE <= '1';
-	--RAM2_RW <= '1';
+	--RAM1_EN <= '1';
+	--RAM1_OE <= '1';
+	--RAM1_RW <= '1';
+	RAM2_EN <= '1';
+	RAM2_OE <= '1';
+	RAM2_RW <= '1';
 	--FPGA_LED <= "0000000000000000";
 	--DYP0 <= "0000000";
 	DYP1 <= "0000000";
-	RDN <= '1';
-	WRN <= '1';
+	--RDN <= '1';
+	--WRN <= '1';
 	
 end Behavioral;
 

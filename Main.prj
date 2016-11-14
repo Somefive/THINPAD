@@ -1,4 +1,4 @@
 vhdl work "Timer.vhd"
-vhdl work "InstructionMemory.vhd"
 vhdl work "DigitLights.vhd"
+vhdl work "DataMemory.vhd"
 vhdl work "Main.vhd"

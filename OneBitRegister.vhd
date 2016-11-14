@@ -41,7 +41,7 @@ begin
 
 	process(WriteEN,Input)
 	begin
-		if(WriteEN'event and WriteEN='1')then
+		if(WriteEN'event and WriteEN='0')then
 			Output <= Input;
 		end if;
 	end process;

@@ -35,25 +35,28 @@ entity ALU is
     Port ( OperandA : in  STD_LOGIC_VECTOR (15 downto 0);
            OperandB : in  STD_LOGIC_VECTOR (15 downto 0);
            ALUOp : in  STD_LOGIC_VECTOR (3 downto 0);
-           Result : out  STD_LOGIC_VECTOR (15 downto 0));
+           Result : out  STD_LOGIC_VECTOR (15 downto 0);
+			  ALUWriteEN: in STD_LOGIC);
 end ALU;
 
 architecture Behavioral of ALU is
 
 begin
 
-	process(OperandA,OperandB,ALUOp)
+	process(OperandA,OperandB,ALUOp,ALUWriteEN)
 	begin
-	case ALUOp is
-		when "0001" => Result <= OperandA + OperandB;
-		when "0010" => Result <= OperandA - OperandB;
-		when "0011" => Result <= OperandA and OperandB;
-		when "0100" => Result <= OperandA or OperandB;
-		when "0101" => Result <= to_stdlogicvector(to_bitvector(OperandB) sll conv_integer(OperandA));
-		when "0110" => Result <= to_stdlogicvector(to_bitvector(OperandB) sra conv_integer(OperandA));
-		when "0111" => Result <= "0000000000000000"-OperandB;
-		when others => Result <= "0000000000000000";
-	end case;
+	if(ALUWriteEN='0')then
+		case ALUOp is
+			when "0001" => Result <= OperandA + OperandB;
+			when "0010" => Result <= OperandA - OperandB;
+			when "0011" => Result <= OperandA and OperandB;
+			when "0100" => Result <= OperandA or OperandB;
+			when "0101" => Result <= to_stdlogicvector(to_bitvector(OperandB) sll conv_integer(OperandA));
+			when "0110" => Result <= to_stdlogicvector(to_bitvector(OperandB) sra conv_integer(OperandA));
+			when "0111" => Result <= "0000000000000000"-OperandB;
+			when others => Result <= "0000000000000000";
+		end case;
+	end if;
 	end process;
 
 end Behavioral;

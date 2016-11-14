@@ -76,7 +76,7 @@ begin
 
 	process(WriteData,WriteRegister,WriteEN)
 	begin
-	if(WriteEN'event and WriteEN='1')then
+	if(WriteEN'event and WriteEN='0')then
 		case WriteRegister is
 			when "000" => REG0 <= WriteData;
 			when "001" => REG1 <= WriteData;

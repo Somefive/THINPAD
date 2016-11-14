@@ -31,52 +31,36 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- 分时器
 entity Timer is
-    Port ( CLK0 : in  STD_LOGIC;
-           CLK1 : in  STD_LOGIC;
-           CLK_FROM_KEY : in  STD_LOGIC;
-           CLK_OUT : out STD_LOGIC);
+    Port ( CLK_INPUT : in STD_LOGIC;
+           CLK_MAJOR : out STD_LOGIC;
+			  CLK_MINOR : out STD_LOGIC);
 end Timer;
 
 architecture Behavioral of Timer is
 
-type MODE_TYPE is(MODE_SINGLE_STEP,MODE_CLK);
-constant mode: MODE_TYPE := MODE_SINGLE_STEP; --当前的分时器模式 单步调试模式 50M分时模式
-signal CLK_CURRENT: STD_LOGIC:='0'; --分时后的信号
+signal CLK_MAJOR_CURRENT: STD_LOGIC:='0'; 
+signal CLK_MINOR_CURRENT: STD_LOGIC:='0'; 
 shared variable count: INTEGER RANGE 0 TO 64:= 0;
-shared variable count2: INTEGER RANGE 0 TO 64:= 0;
+
 begin
 	
-	process(CLK_FROM_KEY,CLK_CURRENT)
-	begin
-	case mode is
-		when MODE_SINGLE_STEP =>
-			CLK_OUT <= CLK_FROM_KEY;
-		when MODE_CLK =>
-			CLK_OUT <= CLK_CURRENT;
-	end case;
-	end process;
+	CLK_MAJOR <= CLK_MAJOR_CURRENT;
+	CLK_MINOR <= CLK_MINOR_CURRENT;
 	
-	process(CLK1)
+	process(CLK_INPUT)
 	begin
-	if(CLK1'event and CLK1='1')then
-		if(count=9)then
-			CLK_CURRENT <= not CLK_CURRENT;
-			count := 0;
-		else
-			count := count + 1;
+		if(CLK_INPUT'event and CLK_INPUT='1')then
+			if(count=1)then
+				CLK_MINOR_CURRENT<=not CLK_MINOR_CURRENT;
+				count:=count+1;
+			elsif(count=3)then
+				CLK_MINOR_CURRENT<=not CLK_MINOR_CURRENT;
+				CLK_MAJOR_CURRENT<=not CLK_MAJOR_CURRENT;
+				count:=0;
+			else
+				count:=count+1;
+			end if;
 		end if;
-	end if;
-	end process;
-	
-	process(CLK0)
-	begin
-	if(CLK0'event and CLK0='0')then
-		if(count2=9)then
-			count2 := 0;
-		else
-			count2 := count2 + 1;
-		end if;
-	end if;
 	end process;
 
 end Behavioral;

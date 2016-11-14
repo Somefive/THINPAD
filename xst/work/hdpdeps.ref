@@ -1,10 +1,10 @@
-V3 99
+V3 98
 FL D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd 2016/11/10.22:21:10 P.20131013
-EN work/ALU 1478916559 FL D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd \
+EN work/ALU 1479021872 FL D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/ALU/Behavioral 1478916560 \
-      FL D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd EN work/ALU 1478916559
+AR work/ALU/Behavioral 1479021873 \
+      FL D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd EN work/ALU 1479021872
 FL D:/Study/THU/2016Autumn/CPU/THINPAD/Comparator.vhd 2016/11/11.11:00:58 P.20131013
 EN work/Comparator 1478916563 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/Comparator.vhd \
@@ -30,18 +30,18 @@ AR work/CPU/Behavioral 1478916602 \
       CP SelectorDataMemoryWriteData CP SelectorCMPParam CP SelectorPCBJ \
       CP SelectorPCALUAdder CP SelectorPCALUOp CP SingleRegister CP OneBitRegister \
       CP Controller
-FL D:/Study/THU/2016Autumn/CPU/THINPAD/DataMemory.vhd 2016/11/11.20:31:58 P.20131013
-EN work/DataMemory 1478916567 \
+FL D:/Study/THU/2016Autumn/CPU/THINPAD/DataMemory.vhd 2016/11/13.18:22:05 P.20131013
+EN work/DataMemory 1479032533 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/DataMemory.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/DataMemory/Behavioral 1478916568 \
-      FL D:/Study/THU/2016Autumn/CPU/THINPAD/DataMemory.vhd EN work/DataMemory 1478916567
+AR work/DataMemory/Behavioral 1479032534 \
+      FL D:/Study/THU/2016Autumn/CPU/THINPAD/DataMemory.vhd EN work/DataMemory 1479032533
 FL D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd 2016/11/10.17:33:06 P.20131013
-EN work/DigitLights 1478916555 \
+EN work/DigitLights 1479087967 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/DigitLights/Behavioral 1478916556 \
-      FL D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd EN work/DigitLights 1478916555
+AR work/DigitLights/Behavioral 1479087968 \
+      FL D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd EN work/DigitLights 1479087967
 FL D:/Study/THU/2016Autumn/CPU/THINPAD/InstructionMemory.vhd 2016/11/11.20:57:42 P.20131013
 EN work/InstructionMemory 1478916565 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/InstructionMemory.vhd \
@@ -49,12 +49,12 @@ EN work/InstructionMemory 1478916565 \
 AR work/InstructionMemory/Behavioral 1478916566 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/InstructionMemory.vhd \
       EN work/InstructionMemory 1478916565
-FL D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd 2016/11/10.20:09:05 P.20131013
-EN work/Main 1478916603 FL D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd \
+FL D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd 2016/11/14.09:46:01 P.20131013
+EN work/Main 1479087969 FL D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Main/Behavioral 1478916604 \
-      FL D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd EN work/Main 1478916603 \
-      CP Timer CP CPU
+AR work/Main/Behavioral 1479087970 \
+      FL D:/Study/THU/2016Autumn/CPU/THINPAD/Main.vhd EN work/Main 1479087969 \
+      CP Timer CP DigitLights
 FL D:/Study/THU/2016Autumn/CPU/THINPAD/OneBitRegister.vhd 2016/11/12.10:09:08 P.20131013
 EN work/OneBitRegister 1478916595 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/OneBitRegister.vhd \
@@ -68,13 +68,13 @@ EN work/PCALU 1478916561 FL D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.vhd \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
 AR work/PCALU/Behavioral 1478916562 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.vhd EN work/PCALU 1478916561
-FL D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhd 2016/11/12.09:52:46 P.20131013
-EN work/RegistersHeap 1478916557 \
+FL D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhd 2016/11/13.15:11:49 P.20131013
+EN work/RegistersHeap 1479021129 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/RegistersHeap/Behavioral 1478916558 \
+AR work/RegistersHeap/Behavioral 1479021130 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhd \
-      EN work/RegistersHeap 1478916557
+      EN work/RegistersHeap 1479021129
 FL D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam1.vhd 2016/11/10.22:41:56 P.20131013
 EN work/SelectorALUParam1 1478916573 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam1.vhd \
@@ -166,8 +166,8 @@ EN work/SingleRegister 1478916593 \
 AR work/SingleRegister/Behavioral 1478916594 \
       FL D:/Study/THU/2016Autumn/CPU/THINPAD/SingleRegister.vhd \
       EN work/SingleRegister 1478916593
-FL D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd 2016/11/10.20:18:41 P.20131013
-EN work/Timer 1478916599 FL D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd \
+FL D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd 2016/11/14.09:43:05 P.20131013
+EN work/Timer 1479087965 FL D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Timer/Behavioral 1478916600 \
-      FL D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd EN work/Timer 1478916599
+AR work/Timer/Behavioral 1479087966 \
+      FL D:/Study/THU/2016Autumn/CPU/THINPAD/Timer.vhd EN work/Timer 1479087965

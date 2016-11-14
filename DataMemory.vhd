@@ -38,6 +38,11 @@ entity DataMemory is
            EN : out  STD_LOGIC;
            OE : out  STD_LOGIC;
            WE : out  STD_LOGIC;
+			  DATA_READY : in  STD_LOGIC;
+           RDN : out  STD_LOGIC;
+           TBRE : in  STD_LOGIC;
+           TSRE : in  STD_LOGIC;
+           WRN : out  STD_LOGIC;
            CLK : in  STD_LOGIC;
            MODE : in  STD_LOGIC_VECTOR (1 downto 0)); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
 end DataMemory;
@@ -46,7 +51,7 @@ architecture Behavioral of DataMemory is
 signal Reading: STD_LOGIC:='1';
 signal Writing: STD_LOGIC:='1';
 begin
-
+	ADDR<="00"&Address;
 	process(CLK,MODE)
 	begin
 		if(MODE="00")then
@@ -57,6 +62,8 @@ begin
 			Writing<='1';
 		elsif(CLK'event and CLK='1')then
 			EN<='0';
+			WRN<='1';
+			RDN<='1';
 			if(Reading='0')then
 				ReadData<=DATA;
 				Reading<='1';
@@ -66,14 +73,13 @@ begin
 				Writing<='1';
 			elsif(MODE="01")then
 				WE<='1';
-				OE<='0';
-				ADDR<="00"&Address;
 				DATA<="ZZZZZZZZZZZZZZZZ";
+				OE<='0';
+				ReadData<=DATA;
 				Reading<='0';
 			elsif(MODE="10")then
 				WE<='0';
 				OE<='1';
-				ADDR<="00"&Address;
 				DATA<=WriteData;
 				Writing<='0';
 			else

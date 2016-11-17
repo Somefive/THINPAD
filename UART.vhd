@@ -45,70 +45,82 @@ entity UART is
            WRN : out  STD_LOGIC;
            CLK : in  STD_LOGIC;
            MODE : in  STD_LOGIC_VECTOR (1 downto 0); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
-			  FINISH: out STD_LOGIC);
+			  FINISH: out STD_LOGIC;
+			  DYP: out STD_LOGIC_VECTOR (6 downto 0));
 end UART;
 
 architecture Behavioral of UART is
-shared variable st: INTEGER RANGE 0 TO 15:=0;
+
+component DigitLights is
+    Port ( L : out  STD_LOGIC_VECTOR (6 downto 0);
+           NUMBER : in  INTEGER);
+end component;
+
+signal st: INTEGER RANGE 0 TO 15:=0;
+signal self_en: STD_LOGIC;
+signal to_write: std_logic_vector (15 downto 0);
 begin
+	--DL: DigitLights port map (DYP,st);
+	
+	with Address select self_en <=
+		'1' when "1011111100000000",
+		'1' when "1011111100000001",
+		'0' when others;
+	
+	with MODE select to_write <=
+		WriteData when "10",
+		"ZZZZZZZZZZZZZZZZ" when others;
+	
 	process(CLK,MODE)
 	begin
-		if(MODE="00")then
+		if(self_en='0')then
 			WRN<='1';
 			RDN<='1';
-			st:=0;
+			st<=0;
+			FINISH<='0';
 		elsif(CLK'event and CLK='1')then
-			case st is
-				when 0 =>
-					if(MODE="01")then --Read
-						DATA<="ZZZZZZZZZZZZZZZZ";
-						WRN<='1';
-						RDN<='0';
-						FINISH<='0';
-						st:=1;
-					elsif(MODE="10")then --Writing
-						RDN<='1';
-						WRN<='0';
-						FINISH<='0';
-						if(Address="1011111100000000")then
-							DATA<="00000000"&WriteData(7 downto 0);
-						elsif(Address="1011111100000001")then
-							DATA<="000000000000000"&DATA_READY;
-						else
-							DATA<=WriteData;
+			if(MODE="00" or MODE="11")then
+				WRN<='1';
+				RDN<='1';
+				st<=0;
+				FINISH<='0';
+			else
+				case st is
+					when 0 =>
+						DATA<=to_write;
+						if(MODE="01")then
+							RDN<='1';
+							st<=1;
+						elsif(MODE="10")then
+							WRN<='0';
+							st<=2;
 						end if;
-						st:=2;
-					else
+					when 1 =>
+						if(DATA_READY='0')then
+							RDN<='1';
+							DATA<="ZZZZZZZZZZZZZZZZ";
+						elsif(DATA_READY='1')then
+							RDN<='0';
+							st<=4;
+						end if;
+					when 2 =>
 						WRN<='1';
-						RDN<='1';
-						Finish<='1';
-					end if;
-				
-				when 1 =>
-					if(DATA_READY='0')then
-						st:=0;
-					elsif(DATA_READY='1')then
+						if(TBRE='1')then
+							st<=3;
+						end if;
+					when 3 =>
+						if(TSRE='1')then
+							st<=5;
+						end if;
+					when 4 =>
 						ReadData<="00000000"&DATA(7 downto 0);
 						RDN<='1';
-						WRN<='1';
-						FINISH<='0';
-						st:=4;
-					end if;
-			
-				when 2 =>
-					WRN<='1';
-					RDN<='1';
-					if(TBRE='1')then
-						st:=3;
-					end if;
-				when 3 =>
-					if(TSRE='1')then
-						st:=4;
-					end if;
-					FINISH<='0';
-					
-				when others =>
-			end case;
+						st<=5;
+					when 5 =>
+						FINISH<='1';
+					when others =>
+				end case;
+			end if;
 		end if;
 	end process;
 

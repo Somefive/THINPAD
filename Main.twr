@@ -39,77 +39,143 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock CLK1
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+RAM2DATA<0> |    3.909(R)|   -1.762(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<1> |    4.542(R)|   -2.267(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<2> |    4.246(R)|   -2.036(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<3> |    4.455(R)|   -2.197(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<4> |    3.626(R)|   -1.537(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<5> |    4.539(R)|   -2.268(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<6> |    5.540(R)|   -3.073(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<7> |    3.957(R)|   -1.807(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<8> |    3.774(R)|   -1.665(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<9> |    3.570(R)|   -1.500(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<10>|    3.288(R)|   -0.163(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<11>|    3.310(R)|   -0.189(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<12>|    3.321(R)|   -0.201(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<13>|    3.305(R)|   -0.183(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<14>|    3.310(R)|   -0.189(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<15>|    3.321(R)|   -0.201(R)|CLK1_BUFGP        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock CLK_FROM_KEY
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+SW_DIP<0>   |    0.898(R)|    0.760(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<1>   |    1.101(R)|    0.821(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<2>   |    0.598(R)|    0.784(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<3>   |    1.684(R)|   -0.065(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<4>   |    2.000(R)|    0.490(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<5>   |    1.715(R)|    0.269(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<6>   |    2.052(R)|    0.220(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<7>   |    1.037(R)|    0.452(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<8>   |    1.052(R)|    0.588(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<9>   |    1.928(R)|    0.114(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<10>  |    1.627(R)|    0.360(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<11>  |    1.712(R)|   -0.083(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<12>  |    1.783(R)|    0.092(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<13>  |    2.279(R)|   -0.113(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<14>  |    2.469(R)|   -0.559(R)|CLK_FROM_KEY_BUFGP|   0.000|
+SW_DIP<15>  |    1.457(R)|    0.257(R)|CLK_FROM_KEY_BUFGP|   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CLK1 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+FPGA_LED<0> |    6.269(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<1> |    6.269(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<2> |    6.253(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<3> |    6.272(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<4> |    6.260(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<5> |    6.260(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<6> |    6.245(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<7> |    6.245(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<8> |    6.232(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<9> |    6.236(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<10>|   11.246(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<11>|   12.124(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<12>|   13.759(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<13>|   11.726(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<14>|   11.664(R)|CLK1_BUFGP        |   0.000|
+FPGA_LED<15>|   11.614(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<0> |    8.643(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<1> |    9.739(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<2> |    9.429(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<3> |    9.243(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<4> |    9.238(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<5> |    9.617(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<6> |    9.446(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<7> |    9.068(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<8> |    8.485(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<9> |    8.408(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<10>|    9.596(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<11>|    8.697(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<12>|   10.308(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<13>|    8.332(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<14>|    9.421(R)|CLK1_BUFGP        |   0.000|
+RAM2ADDR<15>|    7.920(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<0> |    8.930(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<1> |   10.042(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<2> |    9.897(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<3> |    9.883(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<4> |    8.625(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<5> |    9.752(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<6> |    9.204(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<7> |    9.463(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<8> |    8.604(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<9> |    8.614(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<10>|    8.916(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<11>|    9.473(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<12>|    8.599(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<13>|    8.635(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<14>|    8.959(R)|CLK1_BUFGP        |   0.000|
+RAM2DATA<15>|    8.117(R)|CLK1_BUFGP        |   0.000|
+RAM2_EN     |    7.812(R)|CLK1_BUFGP        |   0.000|
+RAM2_OE     |    8.494(R)|CLK1_BUFGP        |   0.000|
+RAM2_RW     |    8.139(R)|CLK1_BUFGP        |   0.000|
+------------+------------+------------------+--------+
+
 Clock CLK_FROM_KEY to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-DYP0<0>     |   10.030(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP0<1>     |    9.992(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP0<2>     |    9.338(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP0<3>     |    9.556(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP0<4>     |    9.606(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP0<5>     |   10.025(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP0<6>     |   10.025(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP1<0>     |    7.990(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP1<1>     |    9.382(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP1<2>     |    7.871(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP1<3>     |    8.665(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP1<4>     |    9.266(R)|CLK_FROM_KEY_BUFGP|   0.000|
-DYP1<6>     |    9.312(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2ADDR<0> |    8.897(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2ADDR<1> |    8.877(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<0> |    7.360(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<1> |    8.774(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<2> |    8.495(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<3> |    8.492(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<4> |    7.657(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<5> |    7.975(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<6> |    8.535(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<7> |    7.907(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<8> |    8.181(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<9> |    9.154(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<10>|    7.909(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<11>|    7.357(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<12>|    8.459(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<13>|    9.027(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<14>|    7.638(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2DATA<15>|    8.655(R)|CLK_FROM_KEY_BUFGP|   0.000|
-RAM2_RW     |    9.077(R)|CLK_FROM_KEY_BUFGP|   0.000|
+DYP1<0>     |   12.358(R)|CLK_FROM_KEY_BUFGP|   0.000|
+DYP1<1>     |   11.986(R)|CLK_FROM_KEY_BUFGP|   0.000|
+DYP1<2>     |   10.909(R)|CLK_FROM_KEY_BUFGP|   0.000|
+DYP1<3>     |   11.778(R)|CLK_FROM_KEY_BUFGP|   0.000|
+DYP1<4>     |   11.761(R)|CLK_FROM_KEY_BUFGP|   0.000|
+DYP1<5>     |   11.041(R)|CLK_FROM_KEY_BUFGP|   0.000|
+DYP1<6>     |   11.136(R)|CLK_FROM_KEY_BUFGP|   0.000|
 ------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK1           |    7.448|         |         |         |
+CLK_FROM_KEY   |   10.587|         |         |         |
+---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock CLK_FROM_KEY
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_FROM_KEY   |    4.303|         |         |         |
+CLK_FROM_KEY   |    8.224|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-SW_DIP<0>      |FPGA_LED<0>    |    9.442|
-SW_DIP<1>      |FPGA_LED<1>    |    9.455|
-SW_DIP<2>      |FPGA_LED<2>    |    8.955|
-SW_DIP<3>      |FPGA_LED<3>    |    8.183|
-SW_DIP<4>      |FPGA_LED<4>    |   10.170|
-SW_DIP<5>      |FPGA_LED<5>    |   10.218|
-SW_DIP<6>      |FPGA_LED<6>    |   10.239|
-SW_DIP<7>      |FPGA_LED<7>    |    9.502|
-SW_DIP<8>      |FPGA_LED<8>    |    9.962|
-SW_DIP<9>      |FPGA_LED<9>    |    9.427|
-SW_DIP<10>     |FPGA_LED<10>   |    9.053|
-SW_DIP<11>     |FPGA_LED<11>   |    9.083|
-SW_DIP<12>     |FPGA_LED<12>   |    9.168|
-SW_DIP<13>     |FPGA_LED<13>   |    8.635|
-SW_DIP<14>     |FPGA_LED<14>   |    8.773|
-SW_DIP<15>     |FPGA_LED<15>   |    8.802|
----------------+---------------+---------+
 
-
-Analysis completed Mon Nov 14 20:57:50 2016 
+Analysis completed Thu Nov 17 13:25:51 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:

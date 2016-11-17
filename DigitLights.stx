@@ -17,9 +17,8 @@ Total CPU time to Xst completion: 0.09 secs
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/UART.vhd" in Library work.
-ERROR:HDLParsers:526 - "D:/Study/THU/2016Autumn/CPU/THINPAD/UART.vhd" Line 49. Non array type STD_LOGIC can not have a index constraint.
-Entity <uart> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd" in Library work.
+Architecture behavioral of Entity digitlights is up to date.
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -27,9 +26,9 @@ Total CPU time to Xst completion: 0.13 secs
  
 --> 
 
-Total memory usage is 262324 kilobytes
+Total memory usage is 262340 kilobytes
 
-Number of errors   :    1 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

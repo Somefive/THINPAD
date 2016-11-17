@@ -20,6 +20,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_signed.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -65,6 +67,11 @@ entity CPU is
            FPGA_LED : out  STD_LOGIC_VECTOR (15 downto 0);
 			  DYP0 : out  STD_LOGIC_VECTOR (6 downto 0);
            DYP1 : out  STD_LOGIC_VECTOR (6 downto 0);
+			  DATA_READY : in  STD_LOGIC;
+           RDN : out  STD_LOGIC;
+           TBRE : in  STD_LOGIC;
+           TSRE : in  STD_LOGIC;
+           WRN : out  STD_LOGIC;
            CLK : in  STD_LOGIC;
            RESET : in  STD_LOGIC);
 end CPU;
@@ -230,6 +237,11 @@ component DataMemory is
            EN : out  STD_LOGIC;
            OE : out  STD_LOGIC;
            WE : out  STD_LOGIC;
+			  DATA_READY : in  STD_LOGIC;
+           RDN : out  STD_LOGIC;
+           TBRE : in  STD_LOGIC;
+           TSRE : in  STD_LOGIC;
+           WRN : out  STD_LOGIC;
            CLK : in  STD_LOGIC;
            MODE : in  STD_LOGIC_VECTOR (1 downto 0)); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
 end component;
@@ -320,10 +332,9 @@ signal Instruction: STD_LOGIC_VECTOR (15 downto 0);
 signal InstructionMemoryMode: STD_LOGIC_VECTOR (1 downto 0);
 signal InstructionMemoryBoot: STD_LOGIC;
 
-signal STEP_NUMBER: INTEGER RANGE 0 TO 4;
-signal Period: STD_LOGIC_VECTOR (2 downto 0):="000";
-
-
+signal st: INTEGER RANGE 0 TO 63:=0;
+signal st_high: INTEGER RANGE 0 TO 63:=0;
+signal st_low: INTEGER RANGE 0 TO 63:=0;
 
 begin
 	FLASH_A<="00000000000000000000000";
@@ -345,19 +356,20 @@ begin
    FLASH_WE<='1';
    U_RXD<='1';
    U_TXD<='1';
-   DYP1(6 downto 3)<="1111";
-	DYP1(0)<=PS2KB_DATA;
-	DYP1(1)<=CLK;
-	DYP1(2)<=RESET;
+   --DYP1(6 downto 3)<="1111";
+	--DYP1(0)<=PS2KB_DATA;
+	--DYP1(1)<=CLK;
+	--DYP1(2)<=RESET;
 	FPGA_LED<=SW_DIP;
 	
 	-- Instruction Debug Mode
 	-- Instruction <= SW_DIP;
 	
-	STEP_NUMBER <= CONV_INTEGER(Period);
-	
    -- Modules
-	L1: DigitLights port map(DYP0,STEP_NUMBER);
+	st_high <= st/16;
+	st_low <= st mod 16;
+	L1: DigitLights port map(DYP0,st_low);
+	L2: DigitLights port map(DYP1,st_high);
 	
 	RegisterHeap_Entity: RegistersHeap port map ( 
 	        Instruction(10 downto 8),
@@ -401,6 +413,11 @@ begin
            RAM1_EN,
            RAM1_OE,
            RAM1_RW,
+			  DATA_READY,
+			  RDN,
+			  TBRE,
+			  TSRE,
+			  WRN,
            CLK,
            DataMemoryMode);
 			  
@@ -490,26 +507,16 @@ begin
            TWriteEN);
 			
 	-- Controller
-	Controller_Entity: Controller port map ( 
-	        Instruction,
-           Period,
-           PCWriteEN,
-           SPWriteEN,
-           IHWriteEN,
-           TWriteEN,
-           RegisterHeapEN,
-           InstructionMemoryMode,
-           DataMemoryMode,
-           ALUOperator,
-           SelectorOfWriteRegister,
-           SelectorOfWriteRegisterData,
-           SelectorOfALUParam1,
-           SelectorOfALUParam2,
-           SelectorOfImmediate,
-           SelectorOfSPInput,
-           SelectorOfDataMemoryWriteData,
-           SelectorOfCMPParam,
-           SelectorOfPCBJ,
-           SelectorOfPCALUOp);			
+		
+	--process
+	process(CLK)
+	begin
+		if(CLK'event and CLK='1')then
+			case st is
+				when others=>
+					st <= st+1;
+			end case;
+		end if;
+	end process;
 end Behavioral;
 

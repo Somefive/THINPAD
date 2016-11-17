@@ -50,7 +50,7 @@ entity Controller is
            SelectorOfCMPParam : out  STD_LOGIC_VECTOR (1 downto 0);
            SelectorOfPCBJ : out  STD_LOGIC_VECTOR (1 downto 0);
            SelectorOfPCALUOp : out  STD_LOGIC_VECTOR (2 downto 0);
-			  RUNNABLE: in STD_LOGIC_VECTOR);
+			  RUNNABLE: in STD_LOGIC);
 end Controller;
 
 architecture Behavioral of Controller is

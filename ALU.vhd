@@ -45,7 +45,7 @@ begin
 
 	process(OperandA,OperandB,ALUOp,ALUWriteEN)
 	begin
-	if(ALUWriteEN='0')then
+	if(ALUWriteEN'event and ALUWriteEN='0')then
 		case ALUOp is
 			when "0001" => Result <= OperandA + OperandB;
 			when "0010" => Result <= OperandA - OperandB;

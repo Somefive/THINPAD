@@ -32,19 +32,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- ·ÖÊ±Æ÷
 entity Timer is
     Port ( CLK_INPUT : in STD_LOGIC;
-           CLK_MAJOR : out STD_LOGIC;
 			  CLK_MINOR : out STD_LOGIC);
 end Timer;
 
 architecture Behavioral of Timer is
 
-signal CLK_MAJOR_CURRENT: STD_LOGIC:='0'; 
 signal CLK_MINOR_CURRENT: STD_LOGIC:='0'; 
 shared variable count: INTEGER RANGE 0 TO 64:= 0;
 
 begin
 	
-	CLK_MAJOR <= CLK_MAJOR_CURRENT;
 	CLK_MINOR <= CLK_MINOR_CURRENT;
 	
 	process(CLK_INPUT)
@@ -52,10 +49,6 @@ begin
 		if(CLK_INPUT'event and CLK_INPUT='1')then
 			if(count=1)then
 				CLK_MINOR_CURRENT<=not CLK_MINOR_CURRENT;
-				count:=count+1;
-			elsif(count=3)then
-				CLK_MINOR_CURRENT<=not CLK_MINOR_CURRENT;
-				CLK_MAJOR_CURRENT<=not CLK_MAJOR_CURRENT;
 				count:=0;
 			else
 				count:=count+1;

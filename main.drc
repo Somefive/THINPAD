@@ -1,19 +1,23 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Nov 14 18:30:49 2016
+Mon Nov 14 20:57:54 2016
 
 drc -z Main.ncd Main.pcf
 
+WARNING:PhysDesignRules:367 - The signal <PS2KB_DATA_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TSRE_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <CLK0_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <TBRE_IBUF> is incomplete. The signal
+WARNING:PhysDesignRules:367 - The signal <CLK1_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <TSRE_IBUF> is incomplete. The signal
+WARNING:PhysDesignRules:367 - The signal <DATA_READY_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TBRE_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <RESET_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <PS2KB_DATA_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-DRC detected 0 errors and 5 warnings.  Please see the previously displayed
+DRC detected 0 errors and 7 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

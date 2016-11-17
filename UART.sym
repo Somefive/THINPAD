@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="UART">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-11-17T1:32:20</timestamp>
+    <pin polarity="Input" x="0" y="-544" name="DATA_READY" />
+    <pin polarity="Input" x="0" y="-464" name="TBRE" />
+    <pin polarity="Input" x="0" y="-384" name="TSRE" />
+    <pin polarity="Input" x="0" y="-304" name="CLK" />
+    <pin polarity="Input" x="0" y="-224" name="Address(15:0)" />
+    <pin polarity="Input" x="0" y="-144" name="WriteData(15:0)" />
+    <pin polarity="Input" x="0" y="-64" name="MODE(1:0)" />
+    <pin polarity="Output" x="480" y="-544" name="EN" />
+    <pin polarity="Output" x="480" y="-480" name="OE" />
+    <pin polarity="Output" x="480" y="-416" name="WE" />
+    <pin polarity="Output" x="480" y="-352" name="RDN" />
+    <pin polarity="Output" x="480" y="-288" name="WRN" />
+    <pin polarity="Output" x="480" y="-224" name="FINISH" />
+    <pin polarity="Output" x="480" y="-160" name="ReadData(15:0)" />
+    <pin polarity="Output" x="480" y="-96" name="ADDR(17:0)" />
+    <pin polarity="BiDirectional" x="480" y="-32" name="DATA(15:0)" />
+    <graph>
+        <rect width="352" x="64" y="-576" height="576" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="240" y="-584" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin DATA_READY" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-464" type="pin TBRE" />
+        <line x2="0" y1="-464" y2="-464" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-384" type="pin TSRE" />
+        <line x2="0" y1="-384" y2="-384" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-304" type="pin CLK" />
+        <line x2="0" y1="-304" y2="-304" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin Address(15:0)" />
+        <rect width="64" x="0" y="-236" height="24" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-144" type="pin WriteData(15:0)" />
+        <rect width="64" x="0" y="-156" height="24" />
+        <line x2="0" y1="-144" y2="-144" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-64" type="pin MODE(1:0)" />
+        <rect width="64" x="0" y="-76" height="24" />
+        <line x2="0" y1="-64" y2="-64" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-544" type="pin EN" />
+        <line x2="480" y1="-544" y2="-544" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-480" type="pin OE" />
+        <line x2="480" y1="-480" y2="-480" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-416" type="pin WE" />
+        <line x2="480" y1="-416" y2="-416" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-352" type="pin RDN" />
+        <line x2="480" y1="-352" y2="-352" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-288" type="pin WRN" />
+        <line x2="480" y1="-288" y2="-288" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-224" type="pin FINISH" />
+        <line x2="480" y1="-224" y2="-224" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-160" type="pin ReadData(15:0)" />
+        <rect width="64" x="416" y="-172" height="24" />
+        <line x2="480" y1="-160" y2="-160" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-96" type="pin ADDR(17:0)" />
+        <rect width="64" x="416" y="-108" height="24" />
+        <line x2="480" y1="-96" y2="-96" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-32" type="pin DATA(15:0)" />
+        <rect width="64" x="416" y="-44" height="24" />
+        <line x2="480" y1="-32" y2="-32" x1="416" />
+    </graph>
+</symbol>

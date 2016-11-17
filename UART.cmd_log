@@ -1,0 +1,2 @@
+vhdtdtfi -lib work UART.vhd -prj THINPAD -o UART.spl -module UART -template D:/Program/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e UART.spl D:/Study/THU/2016Autumn/CPU/THINPAD/UART.sym 

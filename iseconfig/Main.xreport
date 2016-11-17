@@ -1,11 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2016-11-17T13:40:07</DateModified>
+=======
+  <DateModified>2016-11-17T10:47:00</DateModified>
+>>>>>>> d029bc148d696d994a3c71401ffd3085809db99a
   <ModuleName>Main</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/Study/THU/2016Autumn/CPU/THINPAD/iseconfig/Main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Study/THU/2016Autumn/CPU/THINPAD\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/iseconfig/Main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD\</ImplementationReportsDirectory>
   <DateInitialized>2016-11-09T22:35:42</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

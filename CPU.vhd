@@ -100,6 +100,7 @@ component SelectorWriteRegisterData is
            ALUResult : in  STD_LOGIC_VECTOR (15 downto 0);
            DataMemoryReadData : in  STD_LOGIC_VECTOR (15 downto 0);
            IH : in  STD_LOGIC_VECTOR (15 downto 0);
+			  UARTReadData : in STD_LOGIC_VECTOR (15 downto 0);
            selector : in  STD_LOGIC_VECTOR (2 downto 0);
 			  WriteRegisterData : out  STD_LOGIC_VECTOR (15 downto 0));
 end component;
@@ -215,6 +216,15 @@ component SelectorPCALUOp is
            SelectorOfPCALUAdder : out  STD_LOGIC_VECTOR (1 downto 0));
 end component;
 
+component SelectorMemoryAddress is
+	Port ( ALUResult : in  STD_LOGIC_VECTOR (15 downto 0);
+           PCOutput : in  STD_LOGIC_VECTOR (15 downto 0);
+           selector : in  STD_LOGIC_VECTOR (1 downto 0);
+           SelectedMemoryAddress : out  STD_LOGIC_VECTOR (15 downto 0));
+end component;
+			
+			 
+
 component InstructionMemory is
     Port ( ReadAddress : in STD_LOGIC_VECTOR (15 downto 0);
 	        Instruction : out STD_LOGIC_VECTOR (15 downto 0);
@@ -246,14 +256,46 @@ component DataMemory is
            MODE : in  STD_LOGIC_VECTOR (1 downto 0)); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
 end component;
 
+component Memory is
+	Port ( Address : in  STD_LOGIC_VECTOR (15 downto 0);
+			WriteData : in  STD_LOGIC_VECTOR (15 downto 0);
+			ReadData : out  STD_LOGIC_VECTOR (15 downto 0);
+			ADDR : out  STD_LOGIC_VECTOR (17 downto 0);
+			DATA : inout  STD_LOGIC_VECTOR (15 downto 0);
+			EN : out  STD_LOGIC;
+			OE : out  STD_LOGIC;
+			WE : out  STD_LOGIC;
+			CLK : in  STD_LOGIC;
+			MODE : in  STD_LOGIC_VECTOR (1 downto 0)); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
+end component;
+
+component UART is
+	Port ( Address : in  STD_LOGIC_VECTOR (15 downto 0);
+           WriteData : in  STD_LOGIC_VECTOR (15 downto 0);
+           ReadData : out  STD_LOGIC_VECTOR (15 downto 0);
+           ADDR : out  STD_LOGIC_VECTOR (17 downto 0);
+           DATA : inout  STD_LOGIC_VECTOR (15 downto 0);
+           EN : out  STD_LOGIC;
+           OE : out  STD_LOGIC;
+           WE : out  STD_LOGIC;
+			  DATA_READY : in  STD_LOGIC;
+           RDN : out  STD_LOGIC;
+           TBRE : in  STD_LOGIC;
+           TSRE : in  STD_LOGIC;
+           WRN : out  STD_LOGIC;
+           CLK : in  STD_LOGIC;
+           MODE : in  STD_LOGIC_VECTOR (1 downto 0); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
+			  FINISH: out STD_LOGIC);
+end component;
+
 component Controller is
     Port ( Instruction : in  STD_LOGIC_VECTOR (15 downto 0);
-           Period : in  STD_LOGIC_VECTOR (2 downto 0);
            PCWriteEN : out  STD_LOGIC;
            SPWriteEN : out  STD_LOGIC;
            IHWriteEN : out  STD_LOGIC;
            TWriteEN : out  STD_LOGIC;
            RegisterHeapEN : out  STD_LOGIC;
+			  InstructionWriteEn : out STD_LOGIC;--InstructionWritenEN
            InstructionMemoryMode : out  STD_LOGIC_VECTOR (1 downto 0);
            DataMemoryMode : out  STD_LOGIC_VECTOR (1 downto 0);
            ALUOperator : out  STD_LOGIC_VECTOR (3 downto 0);
@@ -273,6 +315,7 @@ end component;
 signal SelectorOfWriteRegister: STD_LOGIC_VECTOR (1 downto 0):="00";
 signal SelectorOfWriteRegisterData: STD_LOGIC_VECTOR (2 downto 0):="000";
 signal RegisterHeapEN: STD_LOGIC:='1';
+
 signal SelectorOfALUParam1: STD_LOGIC_VECTOR (1 downto 0):="00";
 signal SelectorOfALUParam2: STD_LOGIC_VECTOR (1 downto 0):="00";
 signal SelectorOfImmediate: STD_LOGIC_VECTOR (1 downto 0):="00";
@@ -281,6 +324,7 @@ signal SelectorOfDataMemoryWriteData: STD_LOGIC_VECTOR (1 downto 0):="00";
 signal SelectorOfCMPParam: STD_LOGIC_VECTOR (1 downto 0):="00";
 signal SelectorOfPCBJ: STD_LOGIC_VECTOR (1 downto 0):="00";
 signal SelectorOfPCALUOp: STD_LOGIC_VECTOR (2 downto 0):="000";
+
 
 -- RegisterHeap Signals
 signal SignalOfWriteRegister: STD_LOGIC_VECTOR (2 downto 0);
@@ -321,6 +365,10 @@ signal DataMemoryMode: STD_LOGIC_VECTOR (1 downto 0);
   signal PCInput: STD_LOGIC_VECTOR (15 downto 0);
   signal PCOutput: STD_LOGIC_VECTOR (15 downto 0);
   signal PCWriteEN: STD_LOGIC;
+  -- Instruction
+  --signal InstructionInput: STD_LOGIC_VECTOR (15 downto 0);
+  --signal InstructionOutput: STD_LOGIC_VECTOR (15 downto 0);
+  signal InstructionWriteEN: STD_LOGIC;
 
 -- Between Selectors
 signal Instruction4to2ShiftResult: STD_LOGIC_VECTOR (15 downto 0);
@@ -331,6 +379,14 @@ signal ComparatorParam2: STD_LOGIC_VECTOR (15 downto 0);
 signal Instruction: STD_LOGIC_VECTOR (15 downto 0);
 signal InstructionMemoryMode: STD_LOGIC_VECTOR (1 downto 0);
 signal InstructionMemoryBoot: STD_LOGIC;
+
+--Memory
+signal MemoryAddress : STD_LOGIC_VECTOR (15 downto 0);
+
+--UART
+signal UARTReadData : STD_LOGIC_VECTOR (15 downto 0); 
+signal UARTFINISH : STD_LOGIC;
+
 
 signal st: INTEGER RANGE 0 TO 63:=0;
 signal st_high: INTEGER RANGE 0 TO 63:=0;
@@ -421,6 +477,37 @@ begin
            CLK,
            DataMemoryMode);
 			  
+	Memory_Entity: Memory port map ( 
+			  MemoryAddress,
+           DataMemoryWriteData,
+           DataMemoryReadData,
+           RAM2ADDR,
+           RAM2DATA,
+           RAM2_EN,
+           RAM2_OE,
+           RAM2_RW,
+           CLK,
+           DataMemoryMode);
+	
+	UART_Entity:UART port map (
+			  ALUResult,
+           DataMemoryWriteData,
+           UARTReadData,
+           RAM1ADDR,
+           RAM1DATA,
+           RAM1_EN,
+           RAM1_OE,
+           RAM1_RW,
+			  DATA_READY,
+			  RDN,
+			  TBRE,
+			  TSRE,
+			  WRN,
+           CLK,
+           DataMemoryMode,
+			  UARTFINISH);
+
+			  
    SelectorWriteRegister_Entity: SelectorWriteRegister port map (
            Instruction(10 downto 8),
            Instruction(7 downto 5),
@@ -434,6 +521,7 @@ begin
            ALUResult,
            DataMemoryReadData,
            IHOutput,
+			  UARTReadData;
            SelectorOfWriteRegisterData,
 			  SignalOfWriteRegisterData);
 	SelectorALUParam1_Entity: SelectorALUParam1 port map ( 
@@ -486,6 +574,11 @@ begin
            SignalOfReadRegisterData1,
            SelectorOfPCALUOp,
            SelectorOfPCALUAdder);
+	SelectorMemoryAddress_Entity:¡¡SelectorMemoryAddress port map(
+			  ALUResult,
+			  PCOutput,
+			  SelectorOfDataMemoryWriteData,
+			  MemoryAddress);
 			  
 	-- Single Registers
 	SPRegister: SingleRegister port map (
@@ -497,6 +590,12 @@ begin
            IHOutput,
            IHWriteEN);
 	IHInput <= SignalOfReadRegisterData1;
+	
+	InstructionRegister: SingleRegister port map (
+	        DataMemoryReadData,
+           Instruction,
+           InstructionWriteEN);
+	
 	PCRegister: SingleRegister port map (
 	        PCInput,
            PCOutput,

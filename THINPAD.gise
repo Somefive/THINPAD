@@ -91,6 +91,9 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Main_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Main_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Main_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Memory.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Memory.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Memory.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="OneBitRegister.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="OneBitRegister.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="OneBitRegister.stx"/>

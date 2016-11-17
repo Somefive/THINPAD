@@ -1,33 +1,32 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:/Study/THU/2016Autumn/CPU/THINPAD/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.14 secs
  
---> Parameter xsthdpdir set to D:/Study/THU/2016Autumn/CPU/THINPAD/xst
+--> Parameter xsthdpdir set to C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Controller.vhd" in Library work.
-Entity <controller> compiled.
-Entity <Controller> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/Controller.vhd" in Library work.
+Architecture behavioral of Entity controller is up to date.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> 
 
-Total memory usage is 262340 kilobytes
+Total memory usage is 272536 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

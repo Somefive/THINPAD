@@ -20,57 +20,84 @@ Total CPU time to Xst completion: 0.10 secs
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/DigitLights.vhd" in Library work.
 Architecture behavioral of Entity digitlights is up to date.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/RegistersHeap.vhd" in Library work.
-Architecture behavioral of Entity registersheap is up to date.
+Entity <RegistersHeap> compiled.
+Entity <RegistersHeap> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/ALU.vhd" in Library work.
-Architecture behavioral of Entity alu is up to date.
+Entity <ALU> compiled.
+Entity <ALU> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/PCALU.vhd" in Library work.
-Architecture behavioral of Entity pcalu is up to date.
+Entity <PCALU> compiled.
+Entity <PCALU> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Comparator.vhd" in Library work.
-Architecture behavioral of Entity comparator is up to date.
+Entity <Comparator> compiled.
+Entity <Comparator> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/InstructionMemory.vhd" in Library work.
-Architecture behavioral of Entity instructionmemory is up to date.
+Entity <InstructionMemory> compiled.
+Entity <InstructionMemory> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/DataMemory.vhd" in Library work.
-Architecture behavioral of Entity datamemory is up to date.
+Entity <DataMemory> compiled.
+Entity <DataMemory> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Memory.vhd" in Library work.
+Architecture behavioral of Entity memory is up to date.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/UART.vhd" in Library work.
+Entity <UART> compiled.
+Entity <UART> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegister.vhd" in Library work.
-Architecture behavioral of Entity selectorwriteregister is up to date.
+Entity <SelectorWriteRegister> compiled.
+Entity <SelectorWriteRegister> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorWriteRegisterData.vhd" in Library work.
-Architecture behavioral of Entity selectorwriteregisterdata is up to date.
+Entity <SelectorWriteRegisterData> compiled.
+Entity <SelectorWriteRegisterData> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam1.vhd" in Library work.
-Architecture behavioral of Entity selectoraluparam1 is up to date.
+Entity <SelectorALUParam1> compiled.
+Entity <SelectorALUParam1> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorALUParam2.vhd" in Library work.
-Architecture behavioral of Entity selectoraluparam2 is up to date.
+Entity <SelectorALUParam2> compiled.
+Entity <SelectorALUParam2> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorShiftParam.vhd" in Library work.
-Architecture behavioral of Entity selectorshiftparam is up to date.
+Entity <SelectorShiftParam> compiled.
+Entity <SelectorShiftParam> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorImmediate.vhd" in Library work.
-Architecture behavioral of Entity selectorimmediate is up to date.
+Entity <SelectorImmediate> compiled.
+Entity <SelectorImmediate> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorSPInput.vhd" in Library work.
-Architecture behavioral of Entity selectorspinput is up to date.
+Entity <SelectorSPInput> compiled.
+Entity <SelectorSPInput> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorDataMemoryWriteData.vhd" in Library work.
-Architecture behavioral of Entity selectordatamemorywritedata is up to date.
+Entity <SelectorDataMemoryWriteData> compiled.
+Entity <SelectorDataMemoryWriteData> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorCMPParam.vhd" in Library work.
-Architecture behavioral of Entity selectorcmpparam is up to date.
+Entity <SelectorCMPParam> compiled.
+Entity <SelectorCMPParam> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCBJ.vhd" in Library work.
-Architecture behavioral of Entity selectorpcbj is up to date.
+Entity <SelectorPCBJ> compiled.
+Entity <SelectorPCBJ> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCALUAdder.vhd" in Library work.
-Architecture behavioral of Entity selectorpcaluadder is up to date.
+Entity <SelectorPCALUAdder> compiled.
+Entity <SelectorPCALUAdder> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorPCALUOp.vhd" in Library work.
-Architecture behavioral of Entity selectorpcaluop is up to date.
+Entity <SelectorPCALUOp> compiled.
+Entity <SelectorPCALUOp> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SelectorMemoryAddress.vhd" in Library work.
+Entity <SelectorMemoryAddress> compiled.
+Entity <SelectorMemoryAddress> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/SingleRegister.vhd" in Library work.
-Architecture behavioral of Entity singleregister is up to date.
+Entity <SingleRegister> compiled.
+Entity <SingleRegister> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/OneBitRegister.vhd" in Library work.
-Architecture behavioral of Entity onebitregister is up to date.
-Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/Controller.vhd" in Library work.
-Architecture behavioral of Entity controller is up to date.
+Entity <OneBitRegister> compiled.
+Entity <OneBitRegister> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/Study/THU/2016Autumn/CPU/THINPAD/CPU.vhd" in Library work.
-Architecture behavioral of Entity cpu is up to date.
+Entity <CPU> compiled.
+Entity <CPU> (Architecture <Behavioral>) compiled.
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.44 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.43 secs
  
 --> 
 
-Total memory usage is 270596 kilobytes
+Total memory usage is 270508 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

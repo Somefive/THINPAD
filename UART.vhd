@@ -45,8 +45,7 @@ entity UART is
            WRN : out  STD_LOGIC;
            CLK : in  STD_LOGIC;
            MODE : in  STD_LOGIC_VECTOR (1 downto 0); --"00" Disabled; "01" Read; "10" Write; "11" Enabled;
-			  FINISH: out STD_LOGIC;
-			  DYP: out STD_LOGIC_VECTOR (6 downto 0));
+			  FINISH: out STD_LOGIC);
 end UART;
 
 architecture Behavioral of UART is

@@ -36,6 +36,7 @@ entity SelectorWriteRegisterData is
            ALUResult : in  STD_LOGIC_VECTOR (15 downto 0);
            DataMemoryReadData : in  STD_LOGIC_VECTOR (15 downto 0);
            IH : in  STD_LOGIC_VECTOR (15 downto 0);
+			  UARTReadData : in STD_LOGIC_VECTOR (15 downto 0);
            selector : in  STD_LOGIC_VECTOR (2 downto 0);
 			  WriteRegisterData : out  STD_LOGIC_VECTOR (15 downto 0));
 end SelectorWriteRegisterData;
@@ -51,6 +52,7 @@ begin
 		ALUResult when "100",
 		DataMemoryReadData when "101",
 		IH when "110",
+		UARTReadData when "111",
 		"0000000000000000" when others;
 
 end Behavioral;

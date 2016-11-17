@@ -4,30 +4,30 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.54 secs
  
 --> Parameter xsthdpdir set to C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.54 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/SelectorWriteRegisterData.vhd" in Library work.
-Entity <selectorwriteregisterdata> compiled.
-Entity <selectorwriteregisterdata> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/Memory.vhd" in Library work.
+Entity <Memory> compiled.
+Entity <Memory> (Architecture <Behavioral>) compiled.
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.12 secs
  
 --> 
 
-Total memory usage is 264324 kilobytes
+Total memory usage is 264332 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

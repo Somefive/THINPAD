@@ -1,5 +1,5 @@
 set -tmpdir "C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/xst/projnav.tmp"
 set -xsthdpdir "C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/xst"
 elaborate
--ifn ALU.prj
+-ifn Memory.prj
 -ifmt mixed

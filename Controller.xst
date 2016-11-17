@@ -1,5 +1,5 @@
-set -tmpdir "D:/Study/THU/2016Autumn/CPU/THINPAD/xst/projnav.tmp"
-set -xsthdpdir "D:/Study/THU/2016Autumn/CPU/THINPAD/xst"
+set -tmpdir "C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/bingochen/Desktop/Junior/cpu/project/cpu/THINPAD/xst"
 elaborate
 -ifn Controller.prj
 -ifmt mixed
